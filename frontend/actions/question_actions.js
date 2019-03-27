@@ -10,18 +10,13 @@ export const receiveQuestions = questions => ({
   questions,
 });
 
-export const receiveBench = ({ question, reviews, authors }) => ({
+export const receiveQuestion = ({ question }) => ({
   type: RECEIVE_QUESTION,
   question,
   reviews,
   authors,
 });
 
-export const createReview = review => dispatch => (
-  APIUtil.createReview(review).then(review => (
-    dispatch(receiveReview(review))
-  ))
-);
 
 export const fetchQuestions = filters => dispatch => (
   APIUtil.fetchQuestions(filters).then(questions => (
@@ -29,14 +24,14 @@ export const fetchQuestions = filters => dispatch => (
   ))
 );
 
-export const fetchBench = id => dispatch => (
-  APIUtil.fetchBench(id).then(payload => (
-    dispatch(receiveBench(payload))
+export const fetchQuestion = id => dispatch => (
+  APIUtil.fetchQuestion(id).then(payload => (
+    dispatch(receiveQuestion(payload))
   ))
 );
 
-export const createBench = question => dispatch => (
-  APIUtil.createBench(question).then(question => (
-    dispatch(receiveBench(question))
+export const createQuestion = question => dispatch => (
+  APIUtil.createQuestion(question).then(question => (
+    dispatch(receiveQuestion(question))
   ))
 );
