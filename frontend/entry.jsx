@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // ReactDOM.render(<Root store={store} />, root);
     ReactDOM.render(
         <div>
-    <h1>Hello Internet!</h1>
-    <h4>Hello World</h4>
+    <h1>Promote Wor?!</h1>
+    <h4>or no</h4>
         </div>
     , root);
 });
