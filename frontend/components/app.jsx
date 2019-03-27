@@ -7,6 +7,7 @@ import {
   Link,
   HashRouter
 } from 'react-router-dom';
+import HeaderContainer from './header_and_search/header_container'
 
 
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
@@ -20,6 +21,7 @@ const App = () => {
     <>
     <header>
     <h4>Stack Over Troubled Water</h4>
+        < HeaderContainer / >
     </header>
 
     <Switch>
