@@ -216,7 +216,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   better_errors
   binding_of_caller
-  bootsnap (>= 1.1.0)
+  bootsnap
   byebug
   capybara (>= 2.15)
   chromedriver-helper
