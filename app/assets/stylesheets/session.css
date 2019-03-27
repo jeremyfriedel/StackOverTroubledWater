@@ -133,3 +133,19 @@ footer {
   border: 1px solid rgb(106, 115, 124);
   background-color: rgb(36, 39, 41);
 }
+
+/* .logo-image {
+  width: 150px;
+  height: 30px;
+} */
+
+.emoji-placeholder {
+  width: 150px;
+  height: 30px;
+  font-size: 45px;
+
+}
+
+.emoji-placeholder a {
+  text-decoration: none;
+}

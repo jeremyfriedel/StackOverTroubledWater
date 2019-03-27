@@ -20,7 +20,11 @@ const App = () => {
   return (
     <>
     <header>
-    <h4>Stack Over Troubled Water</h4>
+    {/* <h4>Stack Over Troubled Water</h4> */}
+        {/* <Link to="/" className="header-link">
+          <img src={window.logoURL} className="logo-image" />
+        </Link> */}
+
         < HeaderContainer / >
     </header>
 
