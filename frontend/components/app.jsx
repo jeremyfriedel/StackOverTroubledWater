@@ -31,6 +31,13 @@ const App = () => {
 
       </Switch>
 
+
+      < footer >
+
+
+      </footer >
+
+
     </>
   )
 
