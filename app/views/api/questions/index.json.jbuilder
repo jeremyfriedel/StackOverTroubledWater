@@ -1,5 +1,3 @@
-@questions.each do |question|
-  json.set! question.id
-    json.partial! 'question', question: Question
+  json.set! @questions do |question|
+    json.extract! question, :id, :body, :category_id, :author_id
   end
-end

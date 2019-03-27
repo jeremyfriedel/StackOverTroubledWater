@@ -1,6 +1,7 @@
-class Api::Questions Controller < ApplicationController
+class Api::QuestionsController < ApplicationController
+  
   def index
-      questions = questions.all
+      questions = Question.all
 
       @questions = questions.includes(:author)
 
@@ -23,4 +24,5 @@ class Api::Questions Controller < ApplicationController
       :body, :category_id, :author_id
     )
   end
+
 end
