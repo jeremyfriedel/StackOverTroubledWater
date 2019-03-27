@@ -4,8 +4,9 @@
     left: 50%;
     margin-top: -50px;
     margin-left: -50px;
-    width: 100px;
+    width: 200px;
     height: 100px;
     border: solid rgb(36, 39, 41) 2px;
+    border-radius: 7px; 
 }
 

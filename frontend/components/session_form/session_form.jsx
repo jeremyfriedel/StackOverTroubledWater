@@ -24,6 +24,7 @@ class SessionForm extends React.Component {
 
   renderErrors() {
     return (
+      <div>
       <ul>
         {this.props.errors.map((error, index) => (
               <li key={`error-${index}`}>
@@ -33,32 +34,32 @@ class SessionForm extends React.Component {
           )
         }
       </ul>
+      </div>
     );
   }
 
   render() {
     return (
       <div className = "auth-box">
-        <h3>{this.props.formType}</h3>
+        {this.props.formType}
       <form onSubmit={this.handleSubmit}>
-          {this.props.formType} or {this.props.navLink}
+          {/* {this.props.formType} or {this.props.navLink} */}
           {this.renderErrors()}
-      <br/>
-      <label>Username
-        <input type = "text"
-               value={this.state.username}
-               onChange={this.update('username')}
-               />
+              <label>Username
+                <input type = "text"
+                      value={this.state.username}
+                      onChange={this.update('username')}
+                      />
 
-               </label>
-      
-      <label>Password
-        <input type="password"
-              value={this.state.password}
-              onChange={this.update('password')}
-            />
+                      </label>
+              
+              <label>Password
+                <input type="password"
+                      value={this.state.password}
+                      onChange={this.update('password')}
+                    />
 
-          </label>
+                  </label>
 
 
           <input type="submit" value={this.props.formType} />
