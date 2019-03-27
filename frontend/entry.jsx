@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(
         <div>
     <h1>Promote Wor?!</h1>
-    <h4>or no</h4>
+    <h4>or noAA</h4>
         </div>
     , root);
 });
