@@ -48,7 +48,7 @@ class SessionForm extends React.Component {
 
           {/* {this.props.formType} or {this.props.navLink} */}
           <div className = "errors">{this.renderErrors()}</div>
-          Username
+            <div className = "username-box-label">Username</div>
           <div className = "input-outer-box">              
             
               <label>
@@ -60,7 +60,7 @@ class SessionForm extends React.Component {
 
                       </label>
                       </div>
-                      Password
+            <div className="password-box-label">Password</div>
       <div className = "input-outer-box">              
               <label>
                 <input type="password"

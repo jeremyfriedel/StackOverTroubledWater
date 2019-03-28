@@ -261,3 +261,11 @@ li {
 .errors {
   color: red;
 }
+
+.password-box-label {
+  padding-top: 10px;
+}
+
+.password-box-label , .username-box-label{
+  text-align: left;
+}
