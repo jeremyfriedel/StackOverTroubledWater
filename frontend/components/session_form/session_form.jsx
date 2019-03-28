@@ -83,7 +83,7 @@ class SessionForm extends React.Component {
 
       </div>
         <div className="signup-link" >Don’t have an account? <a href="#/signup">Sign up </a><br></br>
-          Are you an employer? <a> Give me a job! </a>
+          Are you an employer? <a href =""> Give me a job! </a>
         </div>
 
 
