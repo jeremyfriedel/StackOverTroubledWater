@@ -266,6 +266,12 @@ li {
   padding-top: 10px;
 }
 
-.password-box-label , .username-box-label{
+.password-box-label,
+.username-box-label {
   text-align: left;
+}
+
+.login-mover {
+  width: 242px;
+  height: 36px;
 }

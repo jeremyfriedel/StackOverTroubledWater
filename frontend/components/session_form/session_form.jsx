@@ -37,6 +37,24 @@ class SessionForm extends React.Component {
       </div>
     );
   }
+  renderSignUp() {
+    if (this.props.formType === "login") {
+      return (
+        <>
+          <div className="signup-link" >Don’t have an account? <a href="#/signup">Sign up </a><br></br>
+            Are you an employer? <a href=""> Give me a job! </a>
+          </div>
+
+
+        </>
+      )
+    }
+    else {
+      return (<div className="login-box-below" ></div>)
+    }
+
+  }
+
 
   render() {
     return (
@@ -82,9 +100,8 @@ class SessionForm extends React.Component {
       </ form>
 
       </div>
-        <div className="signup-link" >Don’t have an account? <a href="#/signup">Sign up </a><br></br>
-          Are you an employer? <a href =""> Give me a job! </a>
-        </div>
+
+        {this.renderSignUp()}
 
 
       </div>
