@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactSVG from 'react-svg';
 import { Provider } from 'react-redux';
 import {
   Route,
