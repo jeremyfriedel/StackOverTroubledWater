@@ -271,7 +271,13 @@ li {
   text-align: left;
 }
 
-.login-mover {
+.login-box-below {
   width: 242px;
   height: 36px;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  justify-content: center;
+  left: 80px;
+
 }
