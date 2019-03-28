@@ -1,7 +1,7 @@
 .auth-box {
   position: absolute;
   top: 30%;
-  left: 50%;
+  left: 44%;
   margin-top: -50px;
   margin-left: -50px;
   width: 200px;
@@ -23,6 +23,27 @@
   padding: 15px;
   display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.auth-box-container {
+  position: absolute;
+  top: 30%;
+  left: 44%;
+  margin-top: -50px;
+  margin-left: -50px;
+
+
+}
+
+.signup-link {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  justify-content: center;
+  left: 80px;
 
 
 }
@@ -33,6 +54,7 @@
   border-radius: 4px;
   width: 200px;
   font-size: 16px;
+  padding-bottom: 5px;
 }
 
 
@@ -125,13 +147,20 @@ header {
 
 footer {
   width: 100%;
-  height: 20px;
+  /* height: 272px; */
   background-color: black;
   position: fixed;
   bottom: 0px;
   left: 0px;
-  border: 1px solid rgb(106, 115, 124);
+  border-top: 1px solid rgb(106, 115, 124);
   background-color: rgb(36, 39, 41);
+  color: white;
+  font-family:
+    Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:
+    11px;
+  display: flex;
+  s
 }
 
 /* .logo-image {
@@ -147,5 +176,89 @@ footer {
 }
 
 .emoji-placeholder a {
+  margin-left: 30px;
+
   text-decoration: none;
 }
+
+.question-index-list-container {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+li {
+  list-style: none;
+
+}
+
+.first_column {
+  color:
+    rgb(187, 192, 196);
+  margin-left: 20%;
+  margin-top: 31px;
+  font-size: 13px;
+  list-style: none;
+  color:
+    rgb(132, 141, 149);
+  font-weight: 400;
+
+}
+
+.first_column li {
+  padding: 7px;
+}
+
+.second_column {
+  color:
+    rgb(187, 192, 196);
+  margin-left: 5%;
+  margin-top: 31px;
+  font-size: 13px;
+  list-style: none;
+  color:
+    rgb(132, 141, 149);
+  font-weight: 400;
+
+}
+
+.second_column li {
+  padding: 7px;
+}
+
+
+
+
+
+.top-level-list {
+  padding-bottom: 21px;
+  color:
+    rgb(187, 192, 196);
+  font-weight: 700;
+
+}
+
+.logo-image {
+  width: 43.25px;
+  width: 50px;
+  position: fixed;
+  left: 20%;
+  bottom: 185px;
+}
+
+.logo-image-top {
+  width: 43.25px;
+  width: 50px;
+  /* position: fixed;
+  left: 20%;
+  bottom: 190px; */
+}
+
+.errors {
+  color: red;
+}
+

@@ -1,37 +1,29 @@
-import * as APIUtil from '../util/question_api_util';
-
 export const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS';
-export const RECEIVE_QUESTION = 'RECEIVE_QUESTION';
-export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
+export const RECEIVE_SINGLE_QUESTION = 'RECEIVE_SINGLE_QUESTION';
+import { getQuestions, postLikeToQuestion, deleteLikeFromQuestion } from '../util/question_api_util';
 
 
-export const receiveQuestions = questions => ({
+const receiveQuestions = questions => ({
   type: RECEIVE_QUESTIONS,
-  questions,
+  questions
 });
 
-export const receiveQuestion = ({ question }) => ({
-  type: RECEIVE_QUESTION,
-  question,
-  reviews,
-  authors,
+const receiveSingleQuestion = question => ({
+  type: RECEIVE_SINGLE_QUESTION,
+  question
 });
 
+export const fetchQuestions = () => dispatch => {
+  return getQuestions()
+    .then(questions => dispatch(receiveQuestions(questions)));
+}
 
-export const fetchQuestions = filters => dispatch => (
-  APIUtil.fetchQuestions(filters).then(questions => (
-    dispatch(receiveQuestions(questions))
-  ))
-);
+export const likeQuestion = id => dispatch => {
+  return postLikeToQuestion(id)
+    .then(question => dispatch(receiveSingleQuestion(question)));
+}
 
-export const fetchQuestion = id => dispatch => (
-  APIUtil.fetchQuestion(id).then(payload => (
-    dispatch(receiveQuestion(payload))
-  ))
-);
-
-export const createQuestion = question => dispatch => (
-  APIUtil.createQuestion(question).then(question => (
-    dispatch(receiveQuestion(question))
-  ))
-);
+export const unLikeQuestion = id => dispatch => {
+  return deleteLikeFromQuestion(id)
+    .then(question => dispatch(receiveSingleQuestion(question)));
+}
