@@ -22,7 +22,7 @@ export const deleteLikeFromQuestion = id => {
 };
 
 export const postQuestion = question => {
-  $.ajax({
+  return $.ajax({
     url: '/api/questions',
     method: 'POST',
     data: { question: question } 

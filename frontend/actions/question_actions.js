@@ -29,7 +29,7 @@ export const unLikeQuestion = id => dispatch => {
 };
 
 export const newQuestion = question => dispatch => {
-  debugger
+  
   return postQuestion(question).then((question) => {
     return dispatch(receiveSingleQuestion(question));
   });

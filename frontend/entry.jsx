@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // testing
-    window.newQuestion = newQuestion;
+    // window.newQuestion = newQuestion;
     // testing
 
 

@@ -5,9 +5,11 @@ class QuestionIndex extends React.Component {
 
 
   componentDidMount() {
-    
+    // debugger
     this.props.fetchQuestions();
   }
+
+  
 
 
 
