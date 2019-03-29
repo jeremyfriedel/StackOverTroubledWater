@@ -28,10 +28,9 @@ export const unLikeQuestion = id => dispatch => {
     .then(question => dispatch(receiveSingleQuestion(question)));
 };
 
-// export const newQuestion = question => dispatch => (
-//   postQuestion(question).then(question => (
-//     dispatch(receiveSingleQuestion(question))
-//   ), error => (
-//     dispatch(receiveErrors(error.responseJSON))
-//   ))
-// );
+export const newQuestion = question => dispatch => {
+  debugger
+  return postQuestion(question).then((question) => {
+    return dispatch(receiveSingleQuestion(question));
+  });
+};

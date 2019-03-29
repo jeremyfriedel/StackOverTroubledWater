@@ -3,7 +3,6 @@ import { fetchQuestions, likeQuestion, unLikeQuestion, newQuestion } from '../..
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
-  
   return {
     questions: Object.keys(state.entities.questions).map(key => state.entities.questions[key])
 

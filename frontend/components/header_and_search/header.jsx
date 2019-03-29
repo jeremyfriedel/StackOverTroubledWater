@@ -30,3 +30,10 @@ const Header = ({ currentUser, logout }) => {
 
 
 export default Header;
+
+
+// $(document).ready(function () {
+//   $('.clicker').click(function () {
+//     $('*').toggleClass('rotate');
+//   });
+// });

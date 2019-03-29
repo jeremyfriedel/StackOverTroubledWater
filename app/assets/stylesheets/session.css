@@ -309,7 +309,7 @@ li {
 }
 
 .question-index-box {
-  width: 200px;
+  /* width: 200px; */
   height: 200px;
   border-top: solid rgb(36, 39, 41) 1px;
   /* background-color: green; */
@@ -326,6 +326,7 @@ li {
   border-left: none;
 
   color: rgb(0, 119, 204);
+  
 
 }
 

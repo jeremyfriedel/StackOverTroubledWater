@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 
+import { newQuestion } from './actions/question_actions'
+
 document.addEventListener('DOMContentLoaded', () => {
     let store;
     if (window.currentUser) {
@@ -18,6 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         store = configureStore();
     }
+
+
+    // testing
+    window.newQuestion = newQuestion;
+    // testing
+
 
 
     const root = document.getElementById('root');

@@ -25,6 +25,6 @@ export const postQuestion = question => {
   $.ajax({
     url: '/api/questions',
     method: 'POST',
-    data: { question } 
+    data: { question: question } 
   });
 };

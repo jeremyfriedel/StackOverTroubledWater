@@ -22,8 +22,8 @@ class QuestionIndex extends React.Component {
           <QuestionItem
             key={`question${question.id}`}
             question={question}
-            // likeChirp={this.props.likeChirp}
-            // unLikeChirp={this.props.unLikeChirp}
+            // likeQuestion={this.props.likeQuestion}
+            // unLikeQuestion={this.props.unLikeQuestion}
           />
           )
         )
