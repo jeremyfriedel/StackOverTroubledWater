@@ -399,6 +399,7 @@ li {
 .sidebar-container-globe {
 
   background-color: rgba(12, 13, 14, 0.05);
+  border: none;
   border-right: solid 3px rgb(244, 128, 36);
   color: rgb(12, 13, 14);
   font-weight: 700;
