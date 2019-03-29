@@ -1,5 +1,5 @@
 import QuestionIndex from './QuestionIndex';
-import { fetchQuestions, likeQuestion, unLikeQuestion } from '../../actions/question_actions';
+import { fetchQuestions, likeQuestion, unLikeQuestion, newQuestion } from '../../actions/question_actions';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
@@ -12,6 +12,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch) => ({
   fetchQuestions: () => dispatch(fetchQuestions()),
+  newQuestion: (question) => dispatch(newQuestion(question))
   // likeQuestion: id => dispatch(likeQuestion(id)),
   // unLikeQuestion: id => dispatch(unLikeQuestion(id))
 });

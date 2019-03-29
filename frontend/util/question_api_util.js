@@ -3,7 +3,7 @@ export const getQuestions = () => {
   return $.ajax({
     url: '/api/questions'
   });
-}
+};
 
 export const postLikeToQuestion = id => {
   return $.ajax({
@@ -11,7 +11,7 @@ export const postLikeToQuestion = id => {
     method: 'POST',
     data: { id }
   });
-}
+};
 
 export const deleteLikeFromQuestion = id => {
   return $.ajax({
@@ -19,4 +19,12 @@ export const deleteLikeFromQuestion = id => {
     method: 'DELETE',
     data: { id }
   });
-}
+};
+
+export const postQuestion = question => {
+  $.ajax({
+    url: '/api/questions',
+    method: 'POST',
+    data: { question } 
+  });
+};
