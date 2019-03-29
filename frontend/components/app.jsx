@@ -44,7 +44,7 @@ const App = () => {
       < footer >
         <FooterComp />
       </footer >
-
+        
 
     </>
   )
