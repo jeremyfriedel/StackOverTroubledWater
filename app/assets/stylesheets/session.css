@@ -326,6 +326,7 @@ li {
   border-left: none;
 
   color: rgb(0, 119, 204);
+  min-width: 120%;
   
 
 }

@@ -24,6 +24,7 @@ class QuestionItem extends React.Component {
     }
 
     const timeinhours = Math.floor(seconds / 3600);
+    
     if (timeinhours > 1) {
       return timeinhours + " hours";
     }
