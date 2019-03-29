@@ -357,7 +357,7 @@ li {
 }
 
 .sidebar-container {
-  padding-top: 100px;
+  padding-top: 90px;
   font-size: 30px;
   border-right: solid black 1px;
 
@@ -383,7 +383,7 @@ li {
   padding-right:
     4px;
   padding-top:
-    4px;
+    11px;
 
 }
 
@@ -391,4 +391,25 @@ li {
   font-size: 11px;
   border-bottom-color:
     rgb(12, 13, 14);
+  color: rgb(106, 115, 124);
+  line-height:
+    13.9333px;
+}
+
+.sidebar-container-globe {
+
+  background-color: rgb(12, 13, 14, 0.05);
+  border-right: solid 3px rgb(244, 128, 36);
+  color: rgb(12, 13, 14);
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.sidebar-container-home,
+.sidebar-container-public {
+  margin-left: -22px;
+}
+
+.sidebar-container-globe {
+  margin-left: -16px;
 }
