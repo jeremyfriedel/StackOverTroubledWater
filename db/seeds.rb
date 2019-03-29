@@ -22,7 +22,7 @@ User.destroy_all
 
 
 # Create Questions
-10.times {
+6.times {
   # category = Category.all.sample
   author_id = User.all.sample.id
   Question.create!(
