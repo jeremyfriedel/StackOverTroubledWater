@@ -14,6 +14,7 @@ import SignUpFormContainer from './session_form/sign_up_form_container';
 import HeaderContainer from './header_and_search/header_container';
 import QuestionIndexContainer from './questions/QuestionIndexContainer';
 import FooterComp from './footer/footer';
+import LeftSidebar from './left_sidebar/sidebar';
 
 
 
@@ -31,20 +32,24 @@ const App = () => {
 
     </header>
 
+    <div className = "main-content">
+        <LeftSidebar />
+
     <Switch>
 
         <AuthRoute exact path="/login" component={LoginFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
+        {/* <Route path="/testing" component={LeftSidebar} /> */}
         <Route path="/" component={QuestionIndexContainer} />
-
+        
 
       </Switch>
-
+      </div>
 
       < footer >
         <FooterComp />
       </footer >
-        
+
 
     </>
   )

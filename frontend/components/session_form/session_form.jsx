@@ -70,7 +70,7 @@ class SessionForm extends React.Component {
           <div className = "input-outer-box">              
             
               <label>
-                <input type = "text"
+                <input type = "text" 
                       value={this.state.username}
                       onChange={this.update('username')}
                       className = "username-box input-box"

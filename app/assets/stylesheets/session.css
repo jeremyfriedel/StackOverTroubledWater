@@ -327,10 +327,25 @@ li {
 
   color: rgb(0, 119, 204);
   min-width: 120%;
-  
+
 
 }
 
 .question-username {
   text-align: right;
+}
+
+.sidebar-container{
+  padding-top: 70px;
+  font-size: 30px;
+  border-right: solid black 1px;
+
+  display: flex;
+  /* justify-content: flex-start; */
+  z-index: -30;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
 }
