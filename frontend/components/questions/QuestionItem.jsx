@@ -43,17 +43,25 @@ class QuestionItem extends React.Component {
 
 
 
-
   render() {
     return (
-      <li className = "question-item">
+      <>
+        <td className="table1-item"> <span className="vote_counter_number"> 0 </span> votes</td>
+        <td className="table1-item"> <span className="answer_counter_number"> 0 </span>  answers</td>
+        <td className="table1-item"> <span className="view_counter_number"> 2 </span> views</td>
+
+      <td className= "question-item table1-item">
 
         <ul className = "question-body">{this.props.question.body} </ul>
         <ul className="question-username">asked {this.timeago(this.props.question.created_at)} ago by {this.props.question.username} </ul>
 
 
 
-      </li>
+      </td>
+      </>
+
+
+
     )
   }
 }

@@ -1,0 +1,28 @@
+<table class="table1">
+  <tbody>
+  <tr>
+    <td class="table1-item">0 votes</td>
+    <td class="table1-item">0 answers</td>
+    <td class="table1-item">2 views</td>
+    <td class="table1-item"></td>
+  </tr>
+  <tr>
+    <td class="table1-item"></td>
+    <td class="table1-item"></td>
+    <td class="table1-item"></td>
+    <td class="table1-item"></td>
+  </tr>
+  <tr>
+    <td class="table1-item"></td>
+    <td class="table1-item"></td>
+    <td class="table1-item"></td>
+    <td class="table1-item"></td>
+  </tr>
+  <tr>
+    <td class="table1-item"></td>
+    <td class="table1-item"></td>
+    <td class="table1-item"></td>
+    <td class="table1-item"></td>
+  </tr>
+  </tbody>
+</table>

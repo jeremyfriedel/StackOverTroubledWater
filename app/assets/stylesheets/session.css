@@ -368,13 +368,13 @@ li {
 
 .question-item {
   padding: 12px;
-  border-color:
+  /* border-color:
     rgb(36, 39, 41);
   border-width: 1px;
   border-style: solid;
   border-right: none;
   border-bottom: none;
-  border-left: none;
+  border-left: none; */
 
   color: rgb(0, 119, 204);
   min-width: 120%;
@@ -457,4 +457,53 @@ li {
 
 .question-form-container-div {
   margin-top: 300px;
+}
+
+.table1 {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table1 td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  /* border-style: solid;
+  border-width: 1px; */
+  overflow: hidden;
+  word-break: normal;
+  /* border-color: black; */
+}
+
+.table1 th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  overflow: hidden;
+  word-break: normal;
+  /* border-color: black; */
+}
+
+
+.table1 tr {
+  border-bottom: 1px solid #EFF0F1;
+}
+
+.table1 {
+  border-top: 1px solid #D6D9DC
+}
+
+.table1 .table1-item {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  text-align: left;
+  vertical-align: top
+}
+
+.vote_counter_number, .answer_counter_number, .view_counter_number {
+  font-size: 25px;
+  padding-bottom: 10px;
 }

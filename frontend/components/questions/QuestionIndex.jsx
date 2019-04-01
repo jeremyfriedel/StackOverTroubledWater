@@ -23,17 +23,24 @@ class QuestionIndex extends React.Component {
       <div className='question-index-list-container'>
         <div className= 'question-index-box'>   </div>
         <ul className= 'question-index-list'>
+      <table className="table1">
+      <tbody>
+
       {
         questions.map (question => (
+          <tr key={`question_table_column${question.id}`}>
           <QuestionItem
             key={`question${question.id}`}
             question={question}
             // likeQuestion={this.props.likeQuestion}
             // unLikeQuestion={this.props.unLikeQuestion}
           />
+          </tr>
           )
         )
       }
+        </tbody>
+      </table>
 
       </ul>
       </div>

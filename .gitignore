@@ -117,3 +117,6 @@ typings/
 # Bundle files
 bundle.js
 bundle.js.map
+
+#DS_Store
+.DS_Store
