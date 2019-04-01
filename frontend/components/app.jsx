@@ -16,6 +16,7 @@ import QuestionIndexContainer from './questions/QuestionIndexContainer';
 import FooterComp from './footer/footer';
 import LeftSidebar from './left_sidebar/sidebar';
 import QuestionFormContainer from './questions/QuestionFormContainer';
+import RightSidebarContainer from './right_sidebar/RightSidebarContainer';
 
 
 
@@ -48,6 +49,8 @@ const App = () => {
         
 
       </Switch>
+  <RightSidebarContainer />
+
       </div>
         </div>
       < footer >

@@ -23,7 +23,7 @@ class QuestionForm extends React.Component {
   }
 
   handleSubmit(event) {
-    // debugger
+    
     event.preventDefault();
     const question = Object.assign({}, this.state, { author_id: this.props.author_id.id});
     this.props.receiveQuestion(question);
@@ -31,7 +31,7 @@ class QuestionForm extends React.Component {
   }
 
   render() {
-    // debugger
+    
     return (
       <div className = "question-form-container-div">
       <form onSubmit={this.handleSubmit}>

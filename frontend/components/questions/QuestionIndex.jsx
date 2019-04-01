@@ -6,7 +6,7 @@ class QuestionIndex extends React.Component {
 
 
   componentDidMount() {
-    // debugger
+    
     this.props.fetchQuestions();
   }
 
@@ -21,9 +21,16 @@ class QuestionIndex extends React.Component {
       <>
       {/* < QuestionFormContainer /> */}
       <div className='question-index-list-container'>
-          <div className='question-index-box'> <span className='top-questions-span'>Top Questions</span>  </div>
+          <div className='question-index-box'>  </div>
         <ul className= 'question-index-list'>
       <table className="table1">
+      <thead>
+        <tr className="top-questions-tr" >
+                  <th className="top-questions-td" colSpan="4">
+        <span className='top-questions-span'>Top Questions</span>
+        </th></tr>
+      </thead>
+
       <tbody>
 
       {
