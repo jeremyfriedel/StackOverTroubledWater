@@ -22,7 +22,7 @@ import QuestionFormContainer from './questions/QuestionFormContainer';
 const App = () => {
   // why cant make pure function?
   return (
-    <>
+    <div className = "holder">
     <header>
     {/* <h4>Stack Over Troubled Water</h4> */}
         {/* <Link to="/" className="header-link">
@@ -54,7 +54,7 @@ const App = () => {
       </footer >
 
 
-    </>
+    </div>
   )
 
 

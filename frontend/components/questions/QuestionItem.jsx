@@ -3,12 +3,17 @@ import React from 'react';
 class QuestionItem extends React.Component {
 
   timeago(date) {
+    if (date === undefined) {
+      this.props.question.username = 'You';
+      return "0 seconds";
+
+    }
     date = new Date(date);
     
     const seconds = Math.floor((new Date() - date) / 1000);
 
     const timeinyear = Math.floor(seconds / 31536000);
-
+    
     if (timeinyear > 1) {
       return timeinyear + " years";
     }
@@ -44,7 +49,7 @@ class QuestionItem extends React.Component {
       <li className = "question-item">
 
         <ul className = "question-body">{this.props.question.body} </ul>
-        <ul className="question-username">asked {this.timeago(this.props.question.created_at)} by {this.props.question.username} </ul>
+        <ul className="question-username">asked {this.timeago(this.props.question.created_at)} ago by {this.props.question.username} </ul>
 
 
 

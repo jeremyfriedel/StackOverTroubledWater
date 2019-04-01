@@ -12,7 +12,7 @@
 Question.destroy_all
 User.destroy_all
 # Create Users
-10.times {
+2.times {
   password = 'password'
   User.create!(
     username: Faker::GreekPhilosophers.unique.name,
@@ -22,7 +22,7 @@ User.destroy_all
 
 
 # Create Questions
-6.times {
+2.times {
   # category = Category.all.sample
   author_id = User.all.sample.id
   Question.create!(

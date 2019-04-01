@@ -59,13 +59,15 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className="auth-box-container">
+        <div className="errors">{this.renderErrors()}</div>
+
       <div className = "auth-box">
 
       <form onSubmit={this.handleSubmit}>
           <div className="signup-or-login-text"> {this.props.formType}</div>
 
           {/* {this.props.formType} or {this.props.navLink} */}
-          <div className = "errors">{this.renderErrors()}</div>
+          
             <div className = "username-box-label">Username</div>
           <div className = "input-outer-box">              
             
