@@ -5,9 +5,13 @@ body {
   margin: 0;
 }
 
-#holder {
+.holder {
   min-height: 100%;
   position: relative;
+}
+
+.main-content {
+  /* padding-bottom: 20%; */
 }
 
 
@@ -204,6 +208,7 @@ footer {
   padding: 0;
   /* position: absolute; */
   /* margin-bottom: -100%; */
+  clear: both;
 
 }
 
@@ -398,6 +403,8 @@ li {
   box-shadow: rgba(12, 13, 14, 0.05) 0px 0px 0px 0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  /* min-height: 900%; */
+  padding-bottom: 33%;
 }
 
 .sidebar-container-item {

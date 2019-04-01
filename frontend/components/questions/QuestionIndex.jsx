@@ -20,7 +20,7 @@ class QuestionIndex extends React.Component {
     return (
       <>
       < QuestionFormContainer />
-      <div className='question-index-list-container'>s
+      <div className='question-index-list-container'>
         <div className= 'question-index-box'>   </div>
         <ul className= 'question-index-list'>
       {

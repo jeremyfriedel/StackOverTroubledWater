@@ -23,6 +23,7 @@ const App = () => {
   // why cant make pure function?
   return (
     <div className = "holder">
+      <div className="header-and-body">
     <header>
     {/* <h4>Stack Over Troubled Water</h4> */}
         {/* <Link to="/" className="header-link">
@@ -48,7 +49,7 @@ const App = () => {
 
       </Switch>
       </div>
-
+        </div>
       < footer >
         <FooterComp />
       </footer >
