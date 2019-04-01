@@ -1,5 +1,6 @@
 import React from 'react';
 import QuestionItem from './QuestionItem';
+import QuestionFormContainer from './QuestionFormContainer';
 
 class QuestionIndex extends React.Component {
 
@@ -15,8 +16,11 @@ class QuestionIndex extends React.Component {
 
   render() {
     const { questions } = this.props;
+    
     return (
-      <div className='question-index-list-container'>
+      <>
+      < QuestionFormContainer />
+      <div className='question-index-list-container'>s
         <div className= 'question-index-box'>   </div>
         <ul className= 'question-index-list'>
       {
@@ -33,6 +37,7 @@ class QuestionIndex extends React.Component {
 
       </ul>
       </div>
+      </>
     )
   }
 }

@@ -19,7 +19,7 @@ const Header = ({ currentUser, logout }) => {
   const personalHeader = () => (
     <div className="personal-header">
       <div className="emoji-placeholder">       
-       <img className="logo-image-top" src={window.logoURL} alt="" />
+       {/* <img className="logo-image-top" src={window.logoURL} alt="" /> */}
     </div>
 
       <h2 className="header-show-name">Hi, {currentUser.username}!</h2>

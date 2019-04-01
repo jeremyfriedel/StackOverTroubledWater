@@ -1,47 +1,59 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 
-class PostForm extends React.Component {
+import { connect } from 'react-redux';
+import { newQuestion } from '../../actions/question_actions';
+
+
+class QuestionForm extends React.Component {
   constructor(props) {
     super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.state = this.props.post;
-  }
-
-  update(field) {
-    return (e) => {
-      this.setState({ [field]: e.target.value });
+    
+    this.state = {
+      body: 'Body here',
+      author_id: 'author_id here'
     };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit(e) {
-    e.preventDefault();
-    this.props.action(this.state).then(() => this.props.history.push('/'));
+  handleChange(field) {
+    return (event) => (
+      this.setState({ [field]: event.target.value })
+    );
+  }
+
+  handleSubmit(event) {
+    // debugger
+    event.preventDefault();
+    const question = Object.assign({}, this.state, { author_id: this.props.author_id.id});
+    this.props.receiveQuestion(question);
+    this.setState({ body: '' });
   }
 
   render() {
+    // debugger
     return (
-      <div>
-        <h3>{this.props.formType}</h3>
-        <form onSubmit={this.handleSubmit}>
-          <label>Title
-            <input
-              type="text"
-              value={this.state.title}
-              onChange={this.update('title')} />
-          </label>
+      <div className = "question-form-container-div">
+      <form onSubmit={this.handleSubmit}>
+        <input
+          type='text'
+          onChange={this.handleChange('body')}
+          value={this.state.body}
+        />
+        {/* <input
+          type='text'
+          onChange={this.handleChange('author_id')}
+          value={this.state.author_id}
+        /> */}
 
-          <label>
-            <textarea
-              value={this.state.body}
-              onChange={this.update('body')} />
-          </label>
-
-          <input type="submit" value={this.props.formType} />
-        </form>
+        <input
+          type='submit'
+          value='Submit Question'
+        />
+      </form>
       </div>
     );
   }
 }
 
-export default withRouter(PostForm);
+export default QuestionForm;
