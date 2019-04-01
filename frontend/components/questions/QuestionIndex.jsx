@@ -19,16 +19,18 @@ class QuestionIndex extends React.Component {
     
     return (
       <>
-      < QuestionFormContainer />
+      {/* < QuestionFormContainer /> */}
       <div className='question-index-list-container'>
-        <div className= 'question-index-box'>   </div>
+          <div className='question-index-box'> <span className='top-questions-span'>Top Questions</span>  </div>
         <ul className= 'question-index-list'>
       <table className="table1">
       <tbody>
 
       {
         questions.map (question => (
-          <tr key={`question_table_column${question.id}`}>
+          <tr key={`question_table_column${question.id}`}
+          className = "table1-tr-class"
+          >
           <QuestionItem
             key={`question${question.id}`}
             question={question}
