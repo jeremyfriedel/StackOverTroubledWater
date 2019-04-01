@@ -356,10 +356,13 @@ li {
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 10px;
-  margin-left: -39px;
+  margin-left: -15%;
+  width: 70%;
 
 
 }
+
+.question-index-list {}
 
 .question-index-box {
   /* width: 200px; */
@@ -594,7 +597,16 @@ li {
   color:
     rgb(36, 39, 41);
   font-size: 18px;
-  width: 20px;
+  width: 30%;
+}
+
+.right-sidebar-table-tr-class {
+  color:
+    rgb(0, 119, 204);
+  font-size:
+    12px;
+
+  height: 30px;
 }
 
 .top-questions-tr {
