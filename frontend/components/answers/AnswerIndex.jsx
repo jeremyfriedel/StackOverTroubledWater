@@ -19,7 +19,7 @@ class AnswerIndex extends React.Component {
     
     return (
       <>
-      {/* < AnswerFormContainer /> */}
+      < AnswerFormContainer />
       <div className='answer-index-list-container'>
           <div className='answer-index-box'>  </div>
         <ul className= 'answer-index-list'>

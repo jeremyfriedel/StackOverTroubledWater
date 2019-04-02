@@ -10,7 +10,8 @@ const mapDispatchToProps = dispatch => {
 
 const mapStateToProps = state => {
     return ({ 
-        author_id: {id: state.session.id}
+        author_id: {id: state.session.id},
+        question_id: {id: 175}
     });
 };
 

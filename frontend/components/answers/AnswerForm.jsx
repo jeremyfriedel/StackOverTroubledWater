@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { connect } from 'react-redux';
-import { newQuestion } from '../../actions/question_actions';
+import { newAnswer } from '../../actions/answers_actions';
 
 
-class QuestionForm extends React.Component {
+class AnswerForm extends React.Component {
   constructor(props) {
     super(props);
     
@@ -25,8 +25,8 @@ class QuestionForm extends React.Component {
   handleSubmit(event) {
     
     event.preventDefault();
-    const question = Object.assign({}, this.state, { author_id: this.props.author_id.id});
-    this.props.receiveQuestion(question);
+    const answer = Object.assign({}, this.state, { author_id: this.props.author_id.id, question_id: this.props.question_id.id});
+    this.props.receiveAnswer(answer);
     this.setState({ body: '' });
   }
 
@@ -48,7 +48,7 @@ class QuestionForm extends React.Component {
 
         <input
           type='submit'
-          value='Submit Question'
+          value='Submit Answer'
         />
       </form>
       </div>
@@ -56,4 +56,4 @@ class QuestionForm extends React.Component {
   }
 }
 
-export default QuestionForm;
+export default AnswerForm;

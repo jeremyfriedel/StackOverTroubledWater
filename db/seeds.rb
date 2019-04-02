@@ -6,11 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Answer.destroy_all
+Question.destroy_all
+User.destroy_all
+
 
 
 # 10.times { Category.create!(name: Faker::Lorem.word) }
-Question.destroy_all
-User.destroy_all
+
 # Create Users
 2.times {
   password = 'password'
@@ -32,3 +35,13 @@ User.destroy_all
 }
 
 
+# Create Answers
+2.times {
+  author_id = User.all.sample.id
+  question_id = Question.all.sample.id
+  Answer.create!(
+    body: Faker::TvShows::Simpsons.unique.quote,
+    author_id: author_id,
+    question_id: question_id
+  )
+}

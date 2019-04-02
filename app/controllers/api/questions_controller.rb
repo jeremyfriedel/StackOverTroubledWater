@@ -9,7 +9,10 @@ class Api::QuestionsController < ApplicationController
   end
 
   def show
-      @question = Question.find(params[:id])
+      @question = Question.includes(:author).find(params[:id])
+
+
+      render :show
   end
 
   def create
