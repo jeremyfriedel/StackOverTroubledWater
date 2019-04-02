@@ -33,9 +33,9 @@ class QuestionIndex extends React.Component {
       <table className="table1">
       <thead>
         <tr className="top-questions-tr" >
-                  <th className="top-questions-td" colSpan="4">
+                  <th className="top-questions-td" colSpan="3">
         <span className='top-questions-span'>Top Questions</span>
-        </th></tr>
+                  </th><th><a href="#/dev">Ask Question</a></th></tr>
       </thead>
 
       <tbody>

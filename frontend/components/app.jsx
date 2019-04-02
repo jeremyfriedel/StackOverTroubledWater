@@ -45,6 +45,8 @@ const App = () => {
         <AuthRoute path="/login" component={LoginFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
         {/* <Route path="/testing" component={LeftSidebar} />  */}
+        <Route path="/dev" component={QuestionFormContainer} /> 
+
         <Route path="/" component={QuestionIndexContainer} />
         {/* <Route path="/" component={QuestionFormContainer} /> */}
         {/* <Route path="/" component={QuestionShowContainer} /> */}
