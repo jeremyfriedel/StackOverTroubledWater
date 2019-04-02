@@ -1,10 +1,10 @@
 import React from 'react';
 
-class QuestionItem extends React.Component {
+class AnswerItem extends React.Component {
 
   timeago(date) {
     if (date === undefined) {
-      this.props.question.username = 'You';
+      this.props.answer.username = 'You';
       return "0 seconds";
 
     }
@@ -50,10 +50,10 @@ class QuestionItem extends React.Component {
         <td className="table1-item"> <div className="answer_label"> <div className="answer_counter_number"> 0 </div>  <div>answers</div> </div> </td >
         <td className="table1-item"> <div className="viewes_label"> <div className="view_counter_number"> 2 </div> <div> views </div></div> </td >
 
-      <td className= "question-item table1-item">
+      <td className= "answer-item table1-item">
 
-        <ul className = "question-body">{this.props.question.body} </ul>
-          <ul className="question-username"><span className = "asked-time-ago-span">asked {this.timeago(this.props.question.created_at)} ago by </span> {this.props.question.username} </ul>
+        <ul className = "answer-body">{this.props.answer.body} </ul>
+          <ul className="answer-username"><span className = "asked-time-ago-span">asked {this.timeago(this.props.answer.created_at)} ago by </span> {this.props.answer.username} </ul>
 
 
 
@@ -66,4 +66,4 @@ class QuestionItem extends React.Component {
   }
 }
 
-export default QuestionItem;
+export default AnswerItem;

@@ -3,6 +3,7 @@ import { fetchAnswers, likeAnswer, unLikeAnswer, newAnswer } from '../../actions
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
+  
   return {
     answers: Object.keys(state.entities.answers).map(key => state.entities.answers[key])
 
