@@ -58,6 +58,23 @@ class BlueSessionForm extends React.Component {
 
   render() {
     return (
+      <div className = "the-blue-box">
+
+        <div className= "blue-promo-text">
+          <div className="blue-promo-title">
+          Learn, Share, Build
+          </div>
+          <div className="blue-promo-para1">
+          Each month, over 50 million developers come to Stack Overflow to learn, share their knowledge, and build their careers.
+           </div>
+          <div className="blue-promo-para2">
+            Join the world’s largest developer community.
+            </div>
+ 
+ 
+ 
+        </div>
+
       <div className="blue-auth-box-container">
         <div className="blue-errors">{this.renderErrors()}</div>
 
@@ -106,6 +123,7 @@ class BlueSessionForm extends React.Component {
         {this.renderSignUp()}
 
 
+      </div>
       </div>
     );
   }
