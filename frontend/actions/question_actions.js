@@ -1,6 +1,6 @@
 export const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS';
 export const RECEIVE_SINGLE_QUESTION = 'RECEIVE_SINGLE_QUESTION';
-import { getQuestions, postLikeToQuestion, deleteLikeFromQuestion, postQuestion } from '../util/question_api_util';
+import { getQuestions, postLikeToQuestion, deleteLikeFromQuestion, postQuestion, getOneQuestion } from '../util/question_api_util';
 
 
 const receiveQuestions = questions => ({
@@ -13,10 +13,16 @@ const receiveSingleQuestion = question => ({
   question
 });
 
-export const fetchQuestions = () => dispatch => {
-  return getQuestions()
+export const fetchQuestions = (id) => dispatch => {
+  return getQuestions(id)
     .then(questions => dispatch(receiveQuestions(questions)));
 };
+
+export const fetchQuestion = (id) => dispatch => {
+  return getOneQuestion(id)
+    .then(questions => dispatch(receiveSingleQuestion(questions)));
+};
+
 
 export const likeQuestion = id => dispatch => {
   return postLikeToQuestion(id)

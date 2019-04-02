@@ -1,6 +1,7 @@
 import React from 'react';
 import QuestionItem from './QuestionItem';
 import QuestionFormContainer from './QuestionFormContainer';
+import BlueSessionFormContainer from '../blue_signup/BlueSessionFormContainer';
 
 class QuestionIndex extends React.Component {
 
@@ -21,7 +22,13 @@ class QuestionIndex extends React.Component {
       <>
       {/* < QuestionFormContainer /> */}
       <div className='question-index-list-container'>
-          <div className='question-index-box'>  </div>
+          <div className='question-index-box'> 
+            <div className='blue-outer-container-div'>
+          <div className='blue-inner-container-div'>
+            < BlueSessionFormContainer />
+            </div>
+            </div>
+           </div>
         <ul className= 'question-index-list'>
       <table className="table1">
       <thead>

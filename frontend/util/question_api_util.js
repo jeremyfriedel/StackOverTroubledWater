@@ -5,6 +5,13 @@ export const getQuestions = () => {
   });
 };
 
+export const getOneQuestion = (id) => {
+  return $.ajax({
+    url: `/api/questions/${id}`
+  });
+};
+
+
 export const postLikeToQuestion = id => {
   return $.ajax({
     url: '/api/likes',

@@ -3,14 +3,13 @@ class Api::QuestionsController < ApplicationController
   def index
       questions = Question.all
 
-      @questions = questions.includes(:author)
+      @questions = questions.includes(:author, :answers)
 
       render :index
   end
 
   def show
-      @question = Question.includes(:author).find(params[:id])
-
+      @question = Question.includes(:author, :answers).find(params[:id])
 
       render :show
   end

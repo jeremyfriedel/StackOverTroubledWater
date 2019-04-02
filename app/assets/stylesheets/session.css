@@ -367,6 +367,7 @@ li {
 .question-index-box {
   /* width: 200px; */
   height: 200px;
+  padding-bottom: 100px;
   /* border-top: solid rgb(36, 39, 41) 1px; */
   /* background-color: green; */
 }
@@ -623,3 +624,27 @@ li {
 .top-questions-span {
   margin-left: 12px;
 }
+
+.question-title-show {
+  position: absolute;
+  top: 90px;
+  left: 270px;
+  font-size:
+    27px;
+}
+
+.answer-div-container {
+  font-size: 15px;
+}
+
+.blue-inner-container-div {
+  /* background-color: blue; */
+}
+
+.blue-outer-container-div {
+  width: 90000%;
+  height: 120%;
+  background: linear-gradient(to right, #126CFA 0%, #108AEC 100%);
+
+}
+
