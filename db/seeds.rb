@@ -15,7 +15,7 @@ User.destroy_all
 # 10.times { Category.create!(name: Faker::Lorem.word) }
 
 # Create Users
-2.times {
+4.times {
   password = 'password'
   User.create!(
     username: Faker::GreekPhilosophers.unique.name,
@@ -29,7 +29,8 @@ User.destroy_all
   # category = Category.all.sample
   author_id = User.all.sample.id
   Question.create!(
-    body: Faker::GreekPhilosophers.unique.quote,
+    body: Faker::Books::Dune.unique.quote,
+    title: Faker::GreekPhilosophers.unique.quote,
     author_id: author_id,
   )
 }

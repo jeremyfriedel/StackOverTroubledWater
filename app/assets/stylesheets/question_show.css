@@ -1,0 +1,40 @@
+.question-title-show {
+  /* position: absolute;
+  top: 90px;
+  left: 270px; */
+
+}
+
+.question-title-span {
+  /* position: absolute;
+  top: 90px;
+  left: 270px; */
+
+  font-size:
+    27px;
+
+
+  border-bottom: solid 1px rgb(228, 230, 232);
+  padding-bottom: 14px;
+}
+
+.question-show-answers-box {
+  padding: 9px 40px 0px 0px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  font-size: 15px;
+  line-height: 1.3;
+
+}
+
+.question-outer-container {
+  position: absolute;
+  top: 90px;
+  left: 270px;
+  display: flex;
+
+}
+
+.answer-div-container {
+  font-size: 15px;
+}

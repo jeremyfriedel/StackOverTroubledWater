@@ -18,10 +18,11 @@ class QuestionShow extends React.Component {
       return (<div></div>)
     }
     return(
+      <div className="question-outer-container">
       <div className="question-title-show">
-        <span >{question.body}</span>
-        <span >{question.username}</span>
-        <span >
+          <div className="question-title-span">{question.title}</div>
+          <div className="question-body-span">{question.body}</div>
+          <div className="question-show-answers-box">
         {
           question.answers.map (answer => (
           <div 
@@ -34,9 +35,11 @@ class QuestionShow extends React.Component {
         )
 
         }
+            <div >{question.username}</div>
         
-        </span>
+          </div>
     </div>
+    </div >
     )
   }
 

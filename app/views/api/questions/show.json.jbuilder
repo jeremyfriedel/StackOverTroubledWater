@@ -1,4 +1,4 @@
-json.extract! @question, :id, :body, :category_id, :author_id
+json.extract! @question, :id, :body, :title, :category_id, :author_id
 json.username @question.author.username
 json.answers @question.answers do |answer|
   json.body answer.body
