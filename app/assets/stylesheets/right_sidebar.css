@@ -1,0 +1,9 @@
+.main-content{
+  display: flex;
+  
+}
+
+.right-sidebar-container {
+    position: absolute;
+    left: 20%;
+}

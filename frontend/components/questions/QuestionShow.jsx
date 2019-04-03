@@ -39,8 +39,10 @@ class QuestionShow extends React.Component {
           className='answer-div-container'
         >
           <div className='answer-body-div'>{answer.body}</div>
-          <div className='answer-timestamp-div'>{timeago(answer.created_at)}</div>
-          <div className='answer-body-author'> {answer.author}</div>
+          <div className='answer-body-author'>
+            <div className='answer-timestamp-div'>answered {timeago(answer.created_at)} ago</div>
+          <div className='answer-body-author-text'> {answer.author}</div>
+          </div>
         </div>
       )
       )
