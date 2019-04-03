@@ -7,22 +7,23 @@ class QuestionShow extends React.Component {
 
   componentDidMount() {
 
-    this.props.fetchQuestion(175);
+    this.props.fetchQuestion(this.props.questionId);
     // debugger
   }
 
   render() {
-    const { questions } = this.props;
-    if (questions.length === 0 ) {
+    const { question } = this.props;
+    
+    if (question === undefined ) {
       return (<div></div>)
     }
     return(
       <div className="question-title-show">
-        <span >{questions[0].body}</span>
-        <span >{questions[0].username}</span>
+        <span >{question.body}</span>
+        <span >{question.username}</span>
         <span >
         {
-          questions[0].answers.map (answer => (
+          question.answers.map (answer => (
           <div 
           key = {`answer${answer.id}`}
           className = 'answer-div-container'

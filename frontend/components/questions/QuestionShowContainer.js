@@ -3,8 +3,10 @@ import { fetchQuestion, likeQuestion, unLikeQuestion, newQuestion } from '../../
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state,ownProps) => {
+  
   return {
-    questions:  Object.values(state.entities.questions)
+    questionId: ownProps.match.params.questionId,
+    question: state.entities.questions[ownProps.match.params.questionId]
 
   };
 };
