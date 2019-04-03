@@ -38,3 +38,61 @@
 .answer-div-container {
   font-size: 15px;
 }
+
+.question-body-span {
+  width: 100%;
+  padding-top: 20px;
+  font-size:
+    15px;
+}
+
+.question-author-div {
+  background-color: #E1ECF4;
+  /* width: 200px; */
+  text-align: right;
+  border-radius: 3px;
+  margin-top: 20px;
+
+}
+
+.question-author-placeholder {
+  width: 90%;
+}
+
+.question-author-outer-body {
+  display: flex;
+}
+
+.question-author-inner-div {
+  padding: 20px;
+}
+
+.question-author-new-contributor {
+  background-color: #cee0ed;
+  border-radius: 3px;
+  padding: 7px;
+  font-size: 13px;
+  text-align: left;
+
+}
+
+.new-contributor-text {
+  line-height:
+    16.4667px;
+
+}
+
+.answer-div-container {
+  font-size: 15px;
+  border-top: solid 1px rgb(228, 230, 232);
+  border-bottom: solid 1px rgb(228, 230, 232);
+  padding: 37px;
+}
+
+.answer-body-author {
+  text-align: right;
+  padding: 30px;
+  font-size:
+    13px;
+  color: #07C;
+}

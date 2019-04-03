@@ -9,9 +9,9 @@ class QuestionItem extends React.Component {
 
 
   render() {
-    if (this.props.question.created_at === undefined) {
-      this.props.answer.username = 'You';
-    }
+    // if (this.props.question.created_at === undefined) {
+    //   this.props.answer.username = 'You';
+    // }
     return (
       <>
         <td className="table1-item"><div className="votes_label"> <div className="vote_counter_number"> 0 </div> <div>votes</div></div> </td>

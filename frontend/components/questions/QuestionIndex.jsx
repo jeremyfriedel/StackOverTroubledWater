@@ -24,8 +24,8 @@ class QuestionIndex extends React.Component {
       <div className='question-index-list-container'>
           <div className='question-index-box'> 
             <div className='blue-outer-container-div'>
-          <div className='blue-inner-container-div'>
-            < BlueSessionFormContainer />
+          <div className='blue-inner-container-div-commented-out'>
+            {/* < BlueSessionFormContainer /> */}
             </div>
             </div>
            </div>

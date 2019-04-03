@@ -29,7 +29,7 @@ User.destroy_all
   # category = Category.all.sample
   author_id = User.all.sample.id
   Question.create!(
-    body: Faker::Books::Dune.unique.quote,
+    body: Faker::TvShows::Simpsons.unique.quote,
     title: Faker::GreekPhilosophers.unique.quote,
     author_id: author_id,
   )
@@ -37,7 +37,7 @@ User.destroy_all
 
 
 # Create Answers
-2.times {
+8.times {
   author_id = User.all.sample.id
   question_id = Question.all.sample.id
   Answer.create!(
