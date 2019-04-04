@@ -26,7 +26,7 @@ class QuestionIndex extends React.Component {
           <div className='question-index-box'> 
             <div className='blue-outer-container-div'>
           <div className='blue-inner-container-div-commented-out'>
-            {/* < BlueSessionFormContainer /> */}
+            < BlueSessionFormContainer />
             </div>
             </div>
            </div>
@@ -49,6 +49,7 @@ class QuestionIndex extends React.Component {
           <QuestionItem
             key={`question${question.id}`}
             question={question}
+            answers = {question.answers}
             // likeQuestion={this.props.likeQuestion}
             // unLikeQuestion={this.props.unLikeQuestion}
           />

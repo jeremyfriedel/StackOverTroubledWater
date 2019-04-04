@@ -4,6 +4,7 @@ export default (state = {}, action) => {
     Object.freeze(state);
     switch (action.type) {
         case RECEIVE_ANSWERS:
+            // this code is never reached
             const answers = {};
             // for (let index = 0; index < action.answers.length; index++) {
             //   const answer = action.answers[index];

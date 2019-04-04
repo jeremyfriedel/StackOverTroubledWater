@@ -46,6 +46,13 @@
     15px;
 }
 
+.question-body > a {
+  color: rgb(0, 119, 204);;
+  text-decoration: none;
+
+
+}
+
 .question-author-div {
   background-color: #E1ECF4;
   /* width: 200px; */

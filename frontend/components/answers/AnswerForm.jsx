@@ -30,7 +30,7 @@ class AnswerForm extends React.Component {
     this.props.receiveAnswer(answer);
     this.setState({ body: '' });
     // debugger
-    this.props.fetchQuestion(this.props.questionId);
+    // this.props.fetchQuestion(this.props.questionId);
   }
 
   render() {

@@ -1,6 +1,8 @@
 import React from 'react';
 
 import timeago from '../../util/time_util';
+import { Link } from 'react-router-dom'
+
 
 
 class QuestionItem extends React.Component {
@@ -20,7 +22,7 @@ class QuestionItem extends React.Component {
 
       <td className= "question-item table1-item">
 
-        <ul className = "question-body">{this.props.question.title} </ul>
+          <ul className="question-body"> <Link to={`/questions/${this.props.question.id}`}> {this.props.question.title} </Link> </ul>
           <ul className="question-username"><span className = "asked-time-ago-span">asked {timeago(this.props.question.created_at)} ago by </span> {this.props.question.username} </ul>
 
 

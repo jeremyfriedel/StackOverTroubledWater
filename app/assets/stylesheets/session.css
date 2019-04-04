@@ -595,8 +595,8 @@ li {
 }
 
 .right-sidebar-container {
-  padding-top: 240px;
-  padding-left: 900px;
+   padding-top: 240px;
+   /* padding-left: 900px; */
   color:
     rgb(36, 39, 41);
   font-size: 18px;
@@ -634,13 +634,14 @@ li {
 
 .blue-inner-container-div {
   /* background-color: blue; */
-  margin-left: 340px;
+  margin-left: 400px;
 }
 
 .blue-outer-container-div {
-  /* width: 90000%; */
+  flex-grow: 1;
   height: 120%;
   background: linear-gradient(to right, #126CFA 0%, #108AEC 100%);
+  margin-left: 156px;
 
 
 }
@@ -676,3 +677,10 @@ li {
   margin-bottom: 17px;
 }
 
+.personal-header {
+  width: 10%;
+}
+
+.question-index-list {
+  padding-left: 200px;
+}
