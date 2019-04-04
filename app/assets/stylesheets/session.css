@@ -684,3 +684,8 @@ li {
 .question-index-list {
   padding-left: 200px;
 }
+
+.right-sidebar-container {
+  justify-self: flex-start;
+  margin-left: 1200px;
+}
