@@ -1,7 +1,12 @@
-class Api::CommentController < ApplicationController
+class Api::CommentsController < ApplicationController
+    def show
+      @comment = Comment.find(params[:id])
+    end
+
+    
     def create
         @comment = Comment.create!(answer_params)
-        render json: {success: "success"}
+        render :show
     end
 
     def answer_params

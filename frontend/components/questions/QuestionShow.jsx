@@ -2,6 +2,7 @@ import React from 'react';
 import QuestionItem from './QuestionItem';
 import timeago from '../../util/time_util';
 import AnswerFormContainer from '../answers/AnswerFormContainer';
+import CommentFormContainer from '../comments/CommentFormContainer';
 
 class QuestionShow extends React.Component {
 
@@ -79,6 +80,10 @@ class QuestionShow extends React.Component {
 
           <div className='answer-comments-body'>
           {this.renderComments(answer)}
+          < CommentFormContainer 
+          answer_id = {answer.id}
+          questionId = {question.id}
+          />
           </div>
 
         

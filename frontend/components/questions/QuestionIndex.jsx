@@ -36,7 +36,10 @@ class QuestionIndex extends React.Component {
         <tr className="top-questions-tr" >
                   <th className="top-questions-td" colSpan="3">
         <span className='top-questions-span'>Top Questions</span>
-                  </th><th><a href="#/dev">Ask Question</a></th></tr>
+                  </th><th><a href="#/dev"
+                  className = "ask-question-button"
+                  
+                  >Ask Question</a></th></tr>
       </thead>
 
       <tbody>
