@@ -3,7 +3,7 @@ class Api::AnswersController < ApplicationController
   def index
       answers = Answer.all
 
-      @answers = answers.includes(:author, :question)
+      @answers = answers.includes(:author, :question, :likes)
 
       render :index
   end
@@ -13,7 +13,9 @@ class Api::AnswersController < ApplicationController
   end
 
   def create
+      
       @answer = Answer.create!(answer_params)
+      
       render :show
   end
 

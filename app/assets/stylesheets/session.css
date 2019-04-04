@@ -211,8 +211,8 @@ footer {
   display: flex;
   margin: 0;
   padding: 0;
-  /* position: absolute; */
-  /* margin-bottom: -100%; */
+  position: absolute;
+  margin-bottom: -800%;
   clear: both;
 
 }
@@ -462,7 +462,8 @@ li {
 }
 
 .question-form-container-div {
-  margin-top: 300px;
+  margin-top: 70px;
+  margin-bottom: 90px;
 }
 
 .table1 {

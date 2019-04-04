@@ -1,11 +1,11 @@
 
-export const getAnswers = () => {
+export const getComments = () => {
     return $.ajax({
-        url: '/api/answers'
+        url: '/api/comments'
     });
 };
 
-export const postLikeToAnswer = id => {
+export const postLikeToComment = id => {
     return $.ajax({
         url: '/api/likes',
         method: 'POST',
@@ -13,7 +13,7 @@ export const postLikeToAnswer = id => {
     });
 };
 
-export const deleteLikeFromAnswer = id => {
+export const deleteLikeFromComment = id => {
     return $.ajax({
         url: '/api/likes',
         method: 'DELETE',
@@ -21,11 +21,11 @@ export const deleteLikeFromAnswer = id => {
     });
 };
 
-export const postAnswer = answer => {
+export const postComment = comment => {
     return $.ajax({
-        url: '/api/answers',
+        url: '/api/comments',
         method: 'POST',
-        data: { answer: answer }
+        data: { comment: comment }
     });
 };
 
@@ -33,7 +33,7 @@ export const postAnswer = answer => {
 //     $.ajax({
 //         method: 'GET',
 //         url: 'api/likes',
-//         data: { like: { answer_id: id } }
+//         data: { like: { comment_id: id } }
 //     })
 // );
 

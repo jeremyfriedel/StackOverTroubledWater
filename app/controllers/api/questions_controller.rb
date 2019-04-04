@@ -9,7 +9,7 @@ class Api::QuestionsController < ApplicationController
   end
 
   def show
-      @question = Question.includes(:author, :answers).find(params[:id])
+      @question = Question.includes(:author, :answers, :comments, :likes).find(params[:id])
 
       render :show
   end
@@ -23,7 +23,7 @@ class Api::QuestionsController < ApplicationController
 
   def question_params
     params.require(:question).permit(
-      :body, :category_id, :author_id
+      :body, :title, :category_id, :author_id
     )
   end
 

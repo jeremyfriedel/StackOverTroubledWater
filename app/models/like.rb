@@ -1,7 +1,7 @@
 class Like < ApplicationRecord
 
 
-    validates :type, presence: true
+    validates :upordown, inclusion: { in: [1,-1] }
 
 
     belongs_to :user

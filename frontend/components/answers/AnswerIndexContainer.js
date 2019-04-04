@@ -1,5 +1,5 @@
 import AnswerIndex from './AnswerIndex';
-import { fetchAnswers, likeAnswer, unLikeAnswer, newAnswer } from '../../actions/answers_actions';
+import { fetchAnswers, createAnswerLike, unLikeAnswer, newAnswer } from '../../actions/answers_actions';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
@@ -12,8 +12,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch) => ({
   fetchAnswers: () => dispatch(fetchAnswers()),
-  newAnswer: (answer) => dispatch(newAnswer(answer))
-  // likeAnswer: id => dispatch(likeAnswer(id)),
+  newAnswer: (answer) => dispatch(newAnswer(answer)),
+  // likeAnswer: vote => dispatch(createAnswerLike(vote)),
   // unLikeAnswer: id => dispatch(unLikeAnswer(id))
 });
 

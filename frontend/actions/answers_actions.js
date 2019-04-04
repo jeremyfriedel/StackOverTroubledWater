@@ -1,5 +1,7 @@
 export const RECEIVE_ANSWERS = 'RECEIVE_ANSWERS';
 export const RECEIVE_SINGLE_ANSWER = 'RECEIVE_SINGLE_ANSWER';
+export const RECEIVE_ANSWER_LIKES = 'RECEIVE_ANSWER_LIKES';
+
 import { getAnswers, postLikeToAnswer, deleteLikeFromAnswer, postAnswer } from '../util/answer_api_util';
 
 
@@ -36,6 +38,24 @@ export const newAnswer = answer => dispatch => {
 };
 
 
+
+
+export const receiveAnswerLikes = Likes => ({
+    type: RECEIVE_ANSWER_LIKES,
+    Likes
+});
+
+// export const fetchAnswerLikes = (id) => dispatch => (
+//     APIUtil.fetchAnswerLikes(id).then(Likes => (
+//         dispatch(receiveAnswerLikes(Likes))
+//     ))
+// );
+
+export const createAnswerLike = Like => dispatch => (
+    createLike(Like).then(Likes => (
+        dispatch(receiveAnswerLikes(Likes))
+    ))
+);
 
 // $.ajax({
 //     method: 'POST',

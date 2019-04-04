@@ -1,13 +1,13 @@
 import React from 'react';
 import QuestionItem from './QuestionItem';
-import QuestionFormContainer from './QuestionFormContainer';
 import timeago from '../../util/time_util';
+import AnswerFormContainer from '../answers/AnswerFormContainer';
 
 class QuestionShow extends React.Component {
 
 
   componentDidMount() {
-    this.initialId = this.props.questionId
+    this.initialId = this.props.questionId;
     this.props.fetchQuestion(this.props.questionId);
     // debugger
   }
@@ -15,8 +15,36 @@ class QuestionShow extends React.Component {
   componentDidUpdate() {
     if (this.props.questionId != this.initialId) {
       this.props.fetchQuestion(this.props.questionId);
-      this.initialId = this.props.questionId
+      this.initialId = this.props.questionId;
     }
+  }
+
+  renderComments(answer) {
+    let comments;
+    if (answer.comments) {
+      comments = answer.comments.map(comment => (
+        <div
+          key={`comment${comment.id}`}
+          className = "question-show-comment-body"
+        >
+          <div className= "question-show-comment-body-text"> 
+            {comment.body} - &nbsp;
+            <span className= "question-show-comment-author-usernamme">
+              {comment.author} 
+            </span>
+            <span className="question-show-comment-author-usernamme-timestamp">
+              &nbsp;{timeago(comment.created_at)}
+              </span>
+          </div> 
+        </div>
+      )
+
+
+      )
+    }
+
+    return comments
+
   }
 
 
@@ -41,8 +69,20 @@ class QuestionShow extends React.Component {
           <div className='answer-body-div'>{answer.body}</div>
           <div className='answer-body-author'>
             <div className='answer-timestamp-div'>answered {timeago(answer.created_at)} ago</div>
-          <div className='answer-body-author-text'> {answer.author}</div>
+          <div className='answer-body-author-text'> {answer.author}
+          
+              
           </div>
+            
+          </div>
+
+
+          <div className='answer-comments-body'>
+          {this.renderComments(answer)}
+          </div>
+
+        
+
         </div>
       )
       )
@@ -85,6 +125,11 @@ class QuestionShow extends React.Component {
             { answers }
         
           </div>
+          <AnswerFormContainer
+            questionId={this.props.questionId}
+          // fetchQuestion={this.props.fetchQuestion}
+          />
+
     </div>
     </div >
     )

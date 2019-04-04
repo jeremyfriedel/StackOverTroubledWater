@@ -20,5 +20,6 @@ class Comment < ApplicationRecord
         class_name: 'User'
 
     belongs_to :answer
+    
 
 end

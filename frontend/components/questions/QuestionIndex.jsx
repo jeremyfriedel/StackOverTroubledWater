@@ -11,6 +11,7 @@ class QuestionIndex extends React.Component {
     this.props.fetchQuestions();
   }
 
+
   
 
 
@@ -60,6 +61,8 @@ class QuestionIndex extends React.Component {
 
       </ul>
       </div>
+        < QuestionFormContainer />
+
       </>
     )
   }

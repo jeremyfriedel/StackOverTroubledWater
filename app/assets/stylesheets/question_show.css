@@ -104,3 +104,35 @@
 .answer-timestamp-div {
   color: #6a737c;
 }
+
+.answer-comments-body {
+  font-size: 13px;
+
+}
+
+
+.question-show-comment-body {
+
+  
+  /* border-bottom: solid 1px rgb(228, 230, 232); */
+  
+  
+}
+
+.question-show-comment-body-text{
+
+  border-top: solid 1px rgb(228, 230, 232);
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+
+.question-show-comment-author-usernamme {
+  color: #38A1CE;
+}
+
+.question-show-comment-author-usernamme-timestamp {
+  color: #9199a1;
+}

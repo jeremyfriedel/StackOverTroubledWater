@@ -10,6 +10,7 @@ class QuestionForm extends React.Component {
     
     this.state = {
       body: 'Body here',
+      title: 'Title here',
       author_id: 'author_id here'
     };
     this.handleChange = this.handleChange.bind(this);
@@ -27,7 +28,7 @@ class QuestionForm extends React.Component {
     event.preventDefault();
     const question = Object.assign({}, this.state, { author_id: this.props.author_id.id});
     this.props.receiveQuestion(question);
-    this.setState({ body: '' });
+    this.setState({ body: 'Body here', title: 'Title here' });
   }
 
   render() {
@@ -35,11 +36,18 @@ class QuestionForm extends React.Component {
     return (
       <div className = "question-form-container-div">
       <form onSubmit={this.handleSubmit}>
+          <input
+            type='text'
+            onChange={this.handleChange('title')}
+            value={this.state.title}
+          />
+
         <input
           type='text'
           onChange={this.handleChange('body')}
           value={this.state.body}
         />
+
         {/* <input
           type='text'
           onChange={this.handleChange('author_id')}

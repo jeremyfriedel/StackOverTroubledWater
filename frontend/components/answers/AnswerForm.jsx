@@ -26,8 +26,11 @@ class AnswerForm extends React.Component {
     
     event.preventDefault();
     const answer = Object.assign({}, this.state, { author_id: this.props.author_id.id, question_id: this.props.question_id.id});
+    
     this.props.receiveAnswer(answer);
     this.setState({ body: '' });
+    // debugger
+    this.props.fetchQuestion(this.props.questionId);
   }
 
   render() {
