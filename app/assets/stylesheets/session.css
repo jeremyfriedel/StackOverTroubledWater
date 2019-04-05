@@ -662,6 +662,7 @@ li {
   display: flex;
   flex-direction: row;
   color: white;
+  padding-right: 20px;
 }
 
 .blue-promo-text {
@@ -704,4 +705,22 @@ li {
   border-radius: 3px;
   display: inline-flex;
   text-decoration: none;
+}
+
+.blue-auth-box-container{
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.answer-form-box {
+  height: 100px;
+  width: 600px;
+}
+.comment-form-box {
+  height: 100px;
+  width: 600px;
+}
+
+.auth-box {
+  margin-left: 300px;
 }

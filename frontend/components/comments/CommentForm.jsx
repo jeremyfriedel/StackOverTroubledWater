@@ -40,6 +40,7 @@ class CommentForm extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <input
           type='text'
+          className = 'comment-form-box'
           onChange={this.handleChange('body')}
           value={this.state.body}
         />

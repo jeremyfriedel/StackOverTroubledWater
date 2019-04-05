@@ -40,6 +40,7 @@ class AnswerForm extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <input
           type='text'
+          className = 'answer-form-box'
           onChange={this.handleChange('body')}
           value={this.state.body}
         />
