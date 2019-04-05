@@ -37,8 +37,10 @@ class CommentForm extends React.Component {
     
     return (
       <div className = "question-form-container-div">
-      <form onSubmit={this.handleSubmit}>
-        <input
+      <form onSubmit={this.handleSubmit}
+      className="comment-form-all"
+      >
+          <textarea
           type='text'
           className = 'comment-form-box'
           onChange={this.handleChange('body')}
@@ -53,6 +55,7 @@ class CommentForm extends React.Component {
         <input
           type='submit'
           value='Submit Comment'
+          className = 'submit-comment-button'
         />
       </form>
       </div>

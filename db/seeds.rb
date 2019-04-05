@@ -25,6 +25,10 @@ User.destroy_all
   )
 }
 
+User.create!( username: 'demoUser',
+              password: 'password'
+)
+
 
 # Create Questions
 2.times {
