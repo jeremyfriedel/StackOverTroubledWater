@@ -31,6 +31,24 @@ User.create!( username: 'demoUser',
 
 
 # Create Questions
+ex1 =  Question.create(
+  body: 'In the javascript language what is this?',
+  title: 'What is this?',
+  author_id: User.all.sample.id
+
+)
+
+ex2 = Question.create(
+  body: 'Everyone should just browse the web in a terminal?. Less ads too!',
+  title: 'Was CSS a mistake?',
+  author_id: User.all.sample.id
+
+)
+
+
+
+
+
 2.times {
   # category = Category.all.sample
   author_id = User.all.sample.id
@@ -42,7 +60,35 @@ User.create!( username: 'demoUser',
 }
 
 
+
+
+
 # Create Answers
+Answer.create(
+  body: 'Nobody knows, but its provocative, It gets the people going',
+  author_id: User.all.sample.id,
+  question_id: ex1.id
+
+)
+
+Answer.create(
+  body: 'Your absolutely right, CSS is silly and everyone should browse the web on lynx',
+  author_id: User.all.sample.id,
+  question_id: ex2.id
+
+)
+
+Answer.create(
+  body: 'CSS is beautiful and I love it and your just a hater! Leave CSS alone!',
+  author_id: User.all.sample.id,
+  question_id: ex2.id
+
+)
+
+
+
+
+
 8.times {
   author_id = User.all.sample.id
   question_id = Question.all.sample.id
@@ -52,6 +98,8 @@ User.create!( username: 'demoUser',
     question_id: question_id
   )
 }
+
+
 
 # Create Comments
 16.times {

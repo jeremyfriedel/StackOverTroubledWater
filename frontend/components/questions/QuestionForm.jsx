@@ -9,8 +9,8 @@ class QuestionForm extends React.Component {
     super(props);
     
     this.state = {
-      body: 'Body here',
-      title: 'Title here',
+      body: '',
+      title: '',
       author_id: 'author_id here'
     };
     this.handleChange = this.handleChange.bind(this);
@@ -28,7 +28,7 @@ class QuestionForm extends React.Component {
     event.preventDefault();
     const question = Object.assign({}, this.state, { author_id: this.props.author_id.id});
     this.props.receiveQuestion(question);
-    this.setState({ body: 'Body here', title: 'Title here' });
+    this.setState({ body: '', title: '' });
   }
 
   render() {

@@ -9,7 +9,7 @@ class AnswerForm extends React.Component {
     super(props);
     
     this.state = {
-      body: 'Body here',
+      body: '',
       author_id: 'author_id here'
     };
     this.handleChange = this.handleChange.bind(this);
