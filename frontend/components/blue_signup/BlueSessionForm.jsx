@@ -7,13 +7,9 @@ class BlueSessionForm extends React.Component {
       username: '',
       password: ''
     };
-    this.state2 = {
-      username: 'demoUser',
-      password: 'password'
-    };
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleSubmit2 = this.handleSubmit2.bind(this);
+    this.handleSubmitDemo = this.handleSubmitDemo.bind(this);
 
   }
 
@@ -29,10 +25,9 @@ class BlueSessionForm extends React.Component {
     this.props.processForm(user);
   }
 
-  handleSubmit2(event) {
+  handleSubmitDemo(event) {
     event.preventDefault();
-    const user = Object.assign({}, this.state2);
-    this.props.processFormLogin(user);
+    this.props.demoLogin();
   }
 
 
@@ -132,23 +127,7 @@ class BlueSessionForm extends React.Component {
 
           </ form>
 
-            <form onSubmit={this.handleSubmit2}>
-
-                <label>
-                  <input type="hidden"
-                    value="demoUser"
-                    onChange={this.update('username')}
-                  />
-
-                </label>
-                <label>
-                  <input type="hidden"
-                    value="password"
-                    onChange={this.update('password')}
-
-                  />
-
-                </label>
+            <form onSubmit={this.handleSubmitDemo}>
 
 
               <input type="submit" className="demoUser-button" value="Demo User" />
