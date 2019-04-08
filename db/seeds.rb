@@ -39,7 +39,7 @@ ex1 =  Question.create(
 )
 
 ex2 = Question.create(
-  body: 'Everyone should just browse the web in a terminal?. Less ads too!',
+  body: 'Is it a instrument?',
   title: 'What is React?',
   author_id: User.all.sample.id
 
@@ -81,19 +81,19 @@ Answer.create(
 
 )
 
-Answer.create(
-  body: 'Your absolutely right, CSS is silly and everyone should browse the web on lynx',
-  author_id: User.all.sample.id,
-  question_id: ex2.id
+# Answer.create(
+#   body: 'Your absolutely right, CSS is silly and everyone should browse the web on lynx',
+#   author_id: User.all.sample.id,
+#   question_id: ex2.id
 
-)
+# )
 
-Answer.create(
-  body: 'CSS is beautiful and I love it and your just a hater! Leave CSS alone!',
-  author_id: User.all.sample.id,
-  question_id: ex2.id
+# Answer.create(
+#   body: 'CSS is beautiful and I love it and your just a hater! Leave CSS alone!',
+#   author_id: User.all.sample.id,
+#   question_id: ex2.id
 
-)
+# )
 
 
 
