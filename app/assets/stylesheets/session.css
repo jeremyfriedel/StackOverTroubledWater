@@ -25,7 +25,7 @@ body {
   /* position: absolute; */
   /* top: 30%; */
   /* left: 44%; */
-  margin-top: 70%;
+  margin-top: 30%;
   /* margin-left: -50px; */
   width: 12.5em; /* 200px */
   height: 13.75em; /* 220px */
@@ -88,8 +88,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  top: 45%;
-  margin-left: 1.5em; /* 24px */
+  top: 75%;
+  margin-left: 18.5em; /* 24px */
 
 
 
@@ -223,8 +223,7 @@ footer {
 } */
 
 .emoji-placeholder {
-  width: 9.375em; /* 150px */
-  height: 1.875em; /* 30px */
+  
   font-size: 2.8125em; /* 45px */
 
 }
@@ -432,7 +431,7 @@ li {
 }
 
 .sidebar-container-public {
-  font-size: 0.6875em; /* 11px */
+  font-size:  11px;
   border-bottom-color:
     rgb(12, 13, 14);
   color: rgb(106, 115, 124);
@@ -642,7 +641,7 @@ li {
 
 .blue-outer-container-div {
   flex-grow: 1;
-  height: 120%;
+  height: 150%;
   background: linear-gradient(to right, #126CFA 0%, #108AEC 100%);
   margin-left: 9.75em; /* 156px */
 
@@ -686,7 +685,6 @@ li {
 }
 
 .question-index-list {
-  padding-left: 12.5em; /* 200px */
 }
 
 .right-sidebar-container {
@@ -733,7 +731,6 @@ li {
 }
 
 .question-index-list{
-  margin-right: 1.875em; /* 30px */
 }
 
 .demoUser-button {
@@ -756,6 +753,7 @@ li {
   margin-left: 2.4375em; /* 39px */
   margin-top: 0.25em; /* 4px */
   color: white;
+  font-size: 15px;
 
 }
 
@@ -860,4 +858,22 @@ textarea {
 
 .question-form-title {
   margin-bottom: 0.1875em; /* 3px */
+}
+
+.demoUser-button {
+  font-size: 15px;
+}
+
+.header-link{
+  position: absolute;
+}
+.blue-signup-or-login-text{
+  text-align: center;
+  text-transform: capitalize;
+
+  
+}
+
+.blue-promo-text {
+  padding-top: 3em;
 }
