@@ -2,6 +2,8 @@ import React from 'react';
 import QuestionIndexContainer from '../questions/QuestionIndexContainer';
 // import {icon1} from './icons';
 import { getRandomColor} from '../../util/color_util';
+import { Link } from 'react-router-dom'
+
 
 class RightSideBar extends React.Component {
 
@@ -38,7 +40,7 @@ class RightSideBar extends React.Component {
                       
                                           
                                           
-                    {question.title}  
+                      <Link to={`/questions/${question.id}`} className = 'right-sidebar-links'>{question.title}</Link>  
                     
                     
                     </td>

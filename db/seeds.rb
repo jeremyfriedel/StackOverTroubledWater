@@ -40,10 +40,20 @@ ex1 =  Question.create(
 
 ex2 = Question.create(
   body: 'Everyone should just browse the web in a terminal?. Less ads too!',
-  title: 'Was CSS a mistake?',
+  title: 'What is React?',
   author_id: User.all.sample.id
 
 )
+
+ex3 = Question.create(
+  body: 'Okay?',
+  title: 'Four score and seven years ago our fathers brought
+   forth on this continent, a new nation, conceived in Liberty,
+    and dedicated to the proposition that all men are created equal.',
+  author_id: User.all.sample.id
+
+)
+
 
 
 

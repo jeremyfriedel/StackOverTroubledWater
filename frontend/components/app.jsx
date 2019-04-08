@@ -15,10 +15,14 @@ import HeaderContainer from './header_and_search/header_container';
 import QuestionIndexContainer from './questions/QuestionIndexContainer';
 import FooterComp from './footer/footer';
 import LeftSidebar from './left_sidebar/sidebar';
+
+import NewQuestionPage from './questions/NewQuestionPage';
+
 import QuestionFormContainer from './questions/QuestionFormContainer';
 import RightSidebarContainer from './right_sidebar/RightSidebarContainer';
 import AnswerIndexContainer from './answers/AnswerIndexContainer';
 import QuestionShowContainer from './questions/QuestionShowContainer';
+import { newQuestion } from '../actions/question_actions';
 
 
 
@@ -38,7 +42,7 @@ const App = () => {
     </header>
 
     <div className = "main-content">
-        <LeftSidebar />
+        {/* <LeftSidebar /> */}
 
     <Switch>
 
@@ -46,7 +50,7 @@ const App = () => {
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
         {/* <Route path="/testing" component={LeftSidebar} />  */}
             {/* <Route path="/dev" component={QuestionShowContainer} />  */}
-        <Route path="/newquestion" component={QuestionFormContainer} /> 
+        <Route path="/newquestion" component={NewQuestionPage} /> 
 
         <Route exact path="/questions/:questionId" component={QuestionShowContainer} />
         <Route path="/" component={QuestionIndexContainer} />

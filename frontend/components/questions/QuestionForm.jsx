@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { withRouter } from 'react-router-dom';
+
 import { connect } from 'react-redux';
 import { newQuestion } from '../../actions/question_actions';
 
@@ -26,9 +28,13 @@ class QuestionForm extends React.Component {
   handleSubmit(event) {
     
     event.preventDefault();
+    
+
     const question = Object.assign({}, this.state, { author_id: this.props.author_id.id});
     this.props.receiveQuestion(question);
     this.setState({ body: '', title: '' });
+    this.props.history.push('/');
+
   }
 
   render() {
@@ -68,4 +74,4 @@ class QuestionForm extends React.Component {
   }
 }
 
-export default QuestionForm;
+export default withRouter(QuestionForm);
