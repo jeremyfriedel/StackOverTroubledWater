@@ -359,7 +359,7 @@ li {
   flex-direction: column;
   margin-top: 1.25em; /* 20px */
   margin-bottom: 0.625em; /* 10px */
-  margin-left: -15%;
+  /* margin-left: -15%; */
   width: 70%;
 
 
@@ -396,7 +396,7 @@ li {
 }
 
 .sidebar-container {
-  padding-top: 5.625em; /* 90px */
+  padding-top: 10.625em; /* 90px */
   font-size: 1.875em; /* 30px */
   border-right: solid #D6D9DC 0.0625em; /* 1px */
   margin-left: -1.3%;
@@ -461,9 +461,10 @@ li {
 
 .question-form-container-div {
   /* margin: auto; */
-  margin-top: 4.375em; /* 70px */
+
+  /* margin-top: 4.375em; 
   margin-left: 10em;
-  margin-bottom: 5.625em; /* 90px */
+  margin-bottom: 5.625em;  */
 }
 
 .table1 {
@@ -597,12 +598,12 @@ li {
 }
 
 .right-sidebar-container {
-   padding-top: 15em; /* 240px */
+   padding-top: 17em; 
    /* padding-left: 900px; */
   color:
     rgb(36, 39, 41);
   font-size: 1.125em; /* 18px */
-  width: 30%;
+  /* width: 30%; */
 }
 
 .right-sidebar-table-tr-class {
@@ -688,8 +689,11 @@ li {
 }
 
 .right-sidebar-container {
-  justify-self: flex-start;
-  margin-left: 75em; /* 1200px */
+  /* justify-self: flex-start; */
+  /* margin-left: 75em; 1200px */
+
+  
+
 }
 
 .ask-question-button {
@@ -723,15 +727,16 @@ li {
 }
 
 .blue-outer-container-div {
-  margin-left: 14.4em; /* 350px */
+  /* margin-left: .775em;  */
+  /* margin-left: -25.6em; */
+  width: 322%;
+
 }
 
 .emoji-placeholder-personal {
   margin-top: 0.625em; /* 10px */
 }
 
-.question-index-list{
-}
 
 .demoUser-button {
   background-color: green;
@@ -771,12 +776,12 @@ li {
 
 .question-form-title {
   height: 1.625em; /* 26px */
-  width: 18.75em; /* 300px */
+  /* width: 18.75em;  */
 }
 
 .question-form-body {
   height: 6.25em; /* 100px */
-  width: 18.75em; /* 300px */
+  /* width: 18.75em;  */
 }
 
 textarea {
@@ -789,7 +794,8 @@ textarea {
 }
 
 .question-index-list {
-  margin-left: 12.5em; /* 200px */
+  /* margin-left: 12.5em;  */
+  margin-left: 1em;
 }
 
 .submit-comment-button {
@@ -876,4 +882,11 @@ textarea {
 
 .blue-promo-text {
   padding-top: 3em;
+}
+
+.left-side-question-show {
+  width: 120%;
+}
+
+.blue-outer-container-div {
 }
