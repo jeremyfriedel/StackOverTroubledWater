@@ -913,6 +913,9 @@ textarea {
   
 }
 
-.question-form-page-outer-page > * >  * >.question-form-body{
+.question-form-page-outer-page > 
+.question-form-container-div >
+.question-form-all >
+.question-form-body{
   width: 28.75em;
 }
