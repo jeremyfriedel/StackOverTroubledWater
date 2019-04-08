@@ -463,7 +463,6 @@ li {
   /* margin: auto; */
   margin-top: 4.375em; /* 70px */
   margin-bottom: 5.625em; /* 90px */
-  margin-left: 12.5em; /* 200px */
 }
 
 .table1 {
@@ -711,7 +710,7 @@ li {
 
 .answer-form-box {
   height: 6.25em; /* 100px */
-  width: 37.5em; /* 600px */
+  width: 30.5em; /* 600px */
 }
 .comment-form-box {
   height: 6.25em; /* 100px */
