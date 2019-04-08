@@ -193,6 +193,7 @@ header {
   width: 13.9375em; /* 223px */
   margin-top: 0.625em; /* 10px */
   margin-bottom: 0.625em; /* 10px */
+  cursor: pointer;
 
 }
 
@@ -727,7 +728,7 @@ li {
 .blue-outer-container-div {
   /* margin-left: .775em;  */
   /* margin-left: -25.6em; */
-  width: 322%;
+  width: 148%;
 
 }
 
@@ -748,6 +749,7 @@ li {
   margin-bottom: 1em;
   font-weight: 800;
   width: 13.9375em;
+  cursor: pointer;
 
 
 }
@@ -762,6 +764,8 @@ li {
   margin-top: 0.25em; /* 4px */
   color: white;
   font-size: 15px;
+  cursor: pointer;
+
 
 }
 
@@ -875,6 +879,8 @@ textarea {
   border: none;
   margin-left: 2.35em; /* 30px */
   color: white;
+  cursor: pointer;
+
 
 }
 
