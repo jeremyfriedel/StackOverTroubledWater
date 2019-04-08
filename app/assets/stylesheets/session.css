@@ -462,6 +462,7 @@ li {
 .question-form-container-div {
   /* margin: auto; */
   margin-top: 4.375em; /* 70px */
+  margin-left: 10em;
   margin-bottom: 5.625em; /* 90px */
 }
 
