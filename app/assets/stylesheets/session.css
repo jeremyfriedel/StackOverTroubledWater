@@ -87,7 +87,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
+  /* position: absolute; */
   top: 75%;
   margin-left: 18.5em; /* 24px */
 
@@ -291,7 +291,7 @@ li {
   position: fixed;
   left: 20%;s
   bottom: 200px; */
-  position: relative;
+  /* position: relative; */
   right: -22%;
   margin-top: 2.27%;
 }
@@ -336,7 +336,7 @@ li {
 .login-box-below {
   width: 15.125em; /* 242px */
   height: 2.25em; /* 36px */
-  position: relative;
+  /* position: relative; */
   top: 12.5em; /* 200px */
   text-align: center;
   justify-content: center;
@@ -723,7 +723,7 @@ li {
 }
 
 .blue-outer-container-div {
-  margin-left: 21.875em; /* 350px */
+  margin-left: 14.4em; /* 350px */
 }
 
 .emoji-placeholder-personal {
@@ -739,7 +739,7 @@ li {
   border-radius: 0.1875em; /* 3px */
   box-shadow: inset 0 0.0625em 0 0 rgba(88, 209, 159, 0.75), 0 0 0 0 /* 1px */ rgba(0,149,255,0);
   border: none;
-  margin-left: 1.875em; /* 30px */
+  margin-left: 1.5em; /* 30px */
   color: white;
 
 }
