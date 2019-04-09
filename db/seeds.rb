@@ -63,7 +63,7 @@ ex3 = Question.create(
   # category = Category.all.sample
   author_id = User.all.sample.id
   Question.create!(
-    body: Faker::TvShows::Simpsons.unique.quote,
+    body: Faker::GreekPhilosophers.unique.quote,
     title: Faker::GreekPhilosophers.unique.quote,
     author_id: author_id,
   )
@@ -103,7 +103,7 @@ Answer.create(
   author_id = User.all.sample.id
   question_id = Question.all.sample.id
   Answer.create!(
-    body: Faker::TvShows::Simpsons.unique.quote,
+    body: Faker::GreekPhilosophers.unique.quote,
     author_id: author_id,
     question_id: question_id
   )
@@ -112,11 +112,11 @@ Answer.create(
 
 
 # Create Comments
-16.times {
+8.times {
   author_id = User.all.sample.id
   answer_id = Answer.all.sample.id
   Comment.create!(
-    body: Faker::TvShows::Simpsons.quote,
+    body: Faker::GreekPhilosophers.unique.quote,
     author_id: author_id,
     answer_id: answer_id
   )

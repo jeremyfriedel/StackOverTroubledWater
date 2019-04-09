@@ -11,8 +11,15 @@ const Header = ({ currentUser, logout }) => {
 
           {/* <img className="logo-image-top" src={window.logoURL} alt="" /> */}
         </div>
-</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <Link to="/login">Login</Link>&nbsp;or&nbsp;<Link to="/signup">Sign up!</Link>
+      </Link>
+        <div className = 'login-signup-header-links'>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <Link to="/login" className='login-link-top'>Login</Link>&nbsp;&nbsp;
+      <Link to="/signup" className = 'signup-link-top'>Sign up!</Link>
+      
+      </div>
+    
     </nav>
   );
 

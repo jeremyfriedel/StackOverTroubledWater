@@ -1,4 +1,5 @@
 import React from 'react';
+import LeftSideBar from '../left_sidebar/sidebar';
 
 class SessionForm extends React.Component {
   constructor(props){
@@ -65,6 +66,8 @@ class SessionForm extends React.Component {
 
   render() {
     return (
+    <>
+    <LeftSideBar/>
       <div className="auth-box-container">
         <div className="errors">{this.renderErrors()}</div>
 
@@ -109,13 +112,7 @@ class SessionForm extends React.Component {
       </ form>
 
         <form onSubmit={this.handleSubmitDemo}>
-
-
           <input type="submit" className="demoUser-button-session" value="Demo User" />
-
-
-
-
         </ form>
 
 
@@ -125,6 +122,7 @@ class SessionForm extends React.Component {
 
 
       </div>
+      </>
     );
   }
 }

@@ -3,6 +3,7 @@ import QuestionItem from './QuestionItem';
 import timeago from '../../util/time_util';
 import AnswerFormContainer from '../answers/AnswerFormContainer';
 import CommentFormContainer from '../comments/CommentFormContainer';
+import Sidebar from '../left_sidebar/sidebar';
 
 class QuestionShow extends React.Component {
 
@@ -53,6 +54,7 @@ class QuestionShow extends React.Component {
 
   render() {
 
+
     const { question } = this.props;
 
     if (question === undefined) {
@@ -76,8 +78,8 @@ class QuestionShow extends React.Component {
           </div>
             
           </div>
-          <svg aria-hidden="true" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
-          <svg aria-hidden="true" className="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26z"></path></svg>
+          {/* <svg aria-hidden="true" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
+          <svg aria-hidden="true" className="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26z"></path></svg> */}
 
           <div className='answer-comments-body'>
           {this.renderComments(answer)}
@@ -104,6 +106,8 @@ class QuestionShow extends React.Component {
     
     
     return(
+      <>
+      <Sidebar />
       <div className="question-outer-container">
       <div className="question-title-show">
           <div className="question-title-span">{question.title}</div>
@@ -138,6 +142,7 @@ class QuestionShow extends React.Component {
 
     </div>
     </div >
+    </>
     )
   }
 

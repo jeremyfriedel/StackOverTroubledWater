@@ -29,8 +29,8 @@
 
 .question-outer-container {
   position: absolute;
-  top: 5.625em; /* 90px */
-  left: 16.875em; /* 270px */
+  top: 6.625em; /* 90px */
+  left: 12.875em; /* 270px */
   display: flex;
 
 }

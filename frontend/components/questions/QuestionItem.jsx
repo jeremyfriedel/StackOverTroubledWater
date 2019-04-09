@@ -16,9 +16,9 @@ class QuestionItem extends React.Component {
     // }
     return (
       <>
-        <td className="table1-item"><div className="votes_label"> <div className="vote_counter_number"> 0 </div> <div>votes</div></div> </td>
-        <td className="table1-item"> <div className="answer_label"> <div className="answer_counter_number"> 0 </div>  <div>answers</div> </div> </td >
-        <td className="table1-item"> <div className="viewes_label"> <div className="view_counter_number"> 2 </div> <div> views </div></div> </td >
+        <td className="table1-item"><div className="votes_label"> <div className="vote_counter_number"> {Math.floor(Math.random() * 8)} </div> <div>votes</div></div> </td>
+        <td className="table1-item"> <div className="answer_label"> <div className="answer_counter_number"> {Math.floor(Math.random() * 8)} </div>  <div>answers</div> </div> </td >
+        <td className="table1-item"> <div className="viewes_label"> <div className="view_counter_number"> {Math.floor(Math.random() * 8)} </div> <div> views </div></div> </td >
 
       <td className= "question-item table1-item">
 
