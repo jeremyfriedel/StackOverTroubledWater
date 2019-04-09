@@ -4,6 +4,7 @@ import timeago from '../../util/time_util';
 import AnswerFormContainer from '../answers/AnswerFormContainer';
 import CommentFormContainer from '../comments/CommentFormContainer';
 import Sidebar from '../left_sidebar/sidebar';
+import { Link } from 'react-router-dom';
 
 class QuestionShow extends React.Component {
 
@@ -83,10 +84,18 @@ class QuestionShow extends React.Component {
 
           <div className='answer-comments-body'>
           {this.renderComments(answer)}
-          < CommentFormContainer 
+          {/* < CommentFormContainer 
           answer_id = {answer.id}
           questionId = {question.id}
-          />
+          /> */}
+            <Link to={{
+              pathname: `/newcomment/${question.id}/${answer.id}`,
+              state: {
+                answer_id:  answer.id ,
+                questionId:  question.id
+              }
+            }} className = 'add-a-comment-link'> add a comment  </Link>
+
           </div>
 
         

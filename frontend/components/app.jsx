@@ -15,6 +15,7 @@ import HeaderContainer from './header_and_search/header_container';
 import QuestionIndexContainer from './questions/QuestionIndexContainer';
 import FooterComp from './footer/footer';
 import LeftSidebar from './left_sidebar/sidebar';
+import NewCommentPage from '../components/questions/NewCommentPage';
 
 import NewQuestionPage from './questions/NewQuestionPage';
 
@@ -51,6 +52,7 @@ const App = () => {
         {/* <Route path="/testing" component={LeftSidebar} />  */}
             {/* <Route path="/dev" component={QuestionShowContainer} />  */}
         <Route path="/newquestion" component={NewQuestionPage} /> 
+        <Route path="/newcomment" component={NewCommentPage} /> 
 
         <Route exact path="/questions/:questionId" component={QuestionShowContainer} />
         <Route path="/" component={QuestionIndexContainer} />

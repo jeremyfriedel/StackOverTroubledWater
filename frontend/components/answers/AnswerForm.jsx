@@ -55,7 +55,7 @@ class AnswerForm extends React.Component {
 
         <input
           type='submit'
-          value='Submit Answer'
+          value='Post Your Answer'
             className='answer-form-button'
         />
       </form>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 import { newComment } from '../../actions/comments_actions';
+import { withRouter } from 'react-router-dom';
 
 
 class CommentForm extends React.Component {
@@ -26,11 +27,13 @@ class CommentForm extends React.Component {
     
     event.preventDefault();
     const comment = Object.assign({}, this.state, { author_id: this.props.author_id.id, answer_id: this.props.answer_id});
-    
+    // debugger
     this.props.receiveComment(comment);
     this.setState({ body: '' });
     // debugger
     this.props.fetchQuestion(this.props.questionId);
+    this.props.history.push(`/questions/${this.props.questionId}`);
+
   }
 
   render() {
@@ -63,4 +66,4 @@ class CommentForm extends React.Component {
   }
 }
 
-export default CommentForm;
+export default withRouter(CommentForm);
