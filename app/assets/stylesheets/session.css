@@ -810,9 +810,6 @@ textarea {
    font-size: 1.25em; /* 20px */
 }
 
-.header-show-name {
-  font-size: 0.625em; /* 10px */
-}
 
 
 .submit-comment-button {
@@ -972,10 +969,11 @@ textarea {
 
 .header-show-name {
   position: absolute;
-  top: .2em;
+  top: .3em;
   right: .1em;
   font-size: 16px;
 }
+
 
 .header-logout{
   position: absolute;
