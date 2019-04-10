@@ -13,6 +13,8 @@
   font-size:
     1.6875em; /* 27px */
 
+  min-width: 30em;
+
 
   border-bottom: solid 0.0625em /* 1px */ rgb(228, 230, 232);
   padding-bottom: 0.875em; /* 14px */

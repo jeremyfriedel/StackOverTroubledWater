@@ -5,7 +5,10 @@ import CommentFormContainer from "../comments/CommentFormContainer";
 
 
 class NewCommentPage extends React.Component {
+    componentDidMount(){
+        window.scrollTo(0, 0);
 
+    }
 
     render() {
         
