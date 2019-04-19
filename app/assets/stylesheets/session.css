@@ -999,6 +999,7 @@ textarea {
 
 .header-logout:hover{
   background-color: #007ed9;
+  cursor: pointer;
 }
 
 .add-a-comment-link{
@@ -1030,3 +1031,9 @@ textarea {
 .header {
   z-index: 1;
 }
+
+.like-button {
+  border: none;
+  outline: none;
+}
+

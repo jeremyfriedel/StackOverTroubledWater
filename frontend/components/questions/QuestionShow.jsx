@@ -12,7 +12,7 @@ class QuestionShow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      likeStatus: true
+      likeStatus: []
     };
     this.handleClick = this.handleClick.bind(this);
 
@@ -95,12 +95,17 @@ class QuestionShow extends React.Component {
       return (<div></div>)
     }
 
-    const label = this.state.likeStatus ? 'Unlike' : 'Like'
+    const label = this.state.likeStatus ? 
+       <svg aria-hidden="true" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
+ : 
+      <svg aria-hidden="true" className="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26z"></path></svg>
+
 
     let answers;
 
     if (question.answers){
       answers = question.answers.map(answer => (
+        
         <div
           key={`answer${answer.id}`}
           className='answer-div-container'
@@ -122,6 +127,7 @@ class QuestionShow extends React.Component {
             <button className="like-button"
               onClick={this.handleClick}
             >
+
             {label}</button>
             </div>
 
