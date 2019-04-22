@@ -123,13 +123,13 @@ class QuestionShow extends React.Component {
           {/* <svg aria-hidden="true" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
           <svg aria-hidden="true" className="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26z"></path></svg> */}
 
-            <div className = "like-button-div">
+            {/* <div className = "like-button-div">
             <button className="like-button"
               onClick={this.handleClick}
             >
 
             {label}</button>
-            </div>
+            </div> */}
 
 
           <div className='answer-comments-body'>
