@@ -31,5 +31,5 @@ Rails is used as the backend and as an API, everything esle is React and Redux. 
 
 If you want to host this website, It is very simple, simply npm install (which automatically builds the production webpack), start the rails server with postgres running, and your good to go!  
 
-
+![screenshot](/stackscreenshot.png)
 
