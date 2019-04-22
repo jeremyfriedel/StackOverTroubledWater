@@ -1,5 +1,7 @@
 # Production Readme
 
+For a live version go to [here](https://stack-over-troubled-water.herokuapp.com/)
+
 
 Project description
 + Single Page Stack Overflow clone built with a rails API backend and React and Redux Frontend.
