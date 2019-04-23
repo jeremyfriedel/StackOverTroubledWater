@@ -396,7 +396,7 @@ li {
 }
 
 .sidebar-container {
-  padding-top: 10.625em; /* 90px */
+  padding-top: 1em; /* 90px */
   font-size: 1.875em; /* 30px */
   border-right: solid #D6D9DC 0.0625em; /* 1px */
   margin-left: -1.3%;
@@ -983,7 +983,7 @@ textarea {
 .header-logout{
   position: absolute;
   top: .5em;
-  right: 7.5em;
+  right: 1em;
   background-color: #0095ff;
   padding-bottom: 8px;
   padding-left: 10.4px;

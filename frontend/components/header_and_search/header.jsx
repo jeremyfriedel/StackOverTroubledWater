@@ -37,7 +37,7 @@ const Header = ({ currentUser, logout }) => {
       </Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
       
-      <h2 className="header-show-name">Hi, {currentUser.username}!</h2>
+      {/* <h2 className="header-show-name">Hi, {currentUser.username}!</h2> */}
       <button className="header-logout" onClick={logout}>Log Out</button>
     </div>
   );
