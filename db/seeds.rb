@@ -47,9 +47,36 @@ ex2 = Question.create(
 
 ex3 = Question.create(
   body: 'Okay?',
-  title: 'Four score and seven years ago our fathers brought
-   forth on this continent, a new nation, conceived in Liberty,
-    and dedicated to the proposition that all men are created equal.',
+  title: 'Does Ruby on Rails have any diesel trains?.',
+  author_id: User.all.sample.id
+
+)
+
+ex4 = Question.create(
+  body: 'Is there a max?',
+  title: 'What is the maximum number of middlewares in applyMiddleware in Redux?',
+  author_id: User.all.sample.id
+
+)
+
+ex5 = Question.create(
+  body: 'It does?',
+  title: 'Why does HTML think "chucknorris" is a color?',
+  author_id: User.all.sample.id
+
+)
+
+
+ex5 = Question.create(
+  body: 'Not all just half',
+  title: 'Is it possible to apply CSS to half of a character?',
+  author_id: User.all.sample.id
+
+)
+
+ex6 = Question.create(
+  body:'console.log(++[[]][+[]]+[+[]]) prints 10',
+  title: 'Why does ++[[]][+[]]+[+[]] return the string “10”?',
   author_id: User.all.sample.id
 
 )
@@ -59,15 +86,17 @@ ex3 = Question.create(
 
 
 
-2.times {
-  # category = Category.all.sample
-  author_id = User.all.sample.id
-  Question.create!(
-    body: Faker::GreekPhilosophers.unique.quote,
-    title: Faker::GreekPhilosophers.unique.quote,
-    author_id: author_id,
-  )
-}
+
+
+# 2.times {
+#   # category = Category.all.sample
+#   author_id = User.all.sample.id
+#   Question.create!(
+#     body: Faker::GreekPhilosophers.unique.quote,
+#     title: Faker::GreekPhilosophers.unique.quote,
+#     author_id: author_id,
+#   )
+# }
 
 
 
