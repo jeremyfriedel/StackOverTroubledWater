@@ -20,7 +20,6 @@ class QuestionIndex extends React.Component {
 
   render() {
     const { questions } = this.props;
-    questions.reverse(); 
     
     return (
       <>
@@ -50,7 +49,7 @@ class QuestionIndex extends React.Component {
       <tbody>
 
       {
-        questions.map (question => (
+        questions.slice(0).reverse().map (question => (
           <tr key={`question_table_column${question.id}`}
           className = "table1-tr-class"
           >
