@@ -128,11 +128,11 @@ Answer.create(
 
 
 
-8.times {
+20.times {
   author_id = User.all.sample.id
   question_id = Question.all.sample.id
   Answer.create!(
-    body: Faker::GreekPhilosophers.unique.quote,
+    body: Faker::GreekPhilosophers.quote,
     author_id: author_id,
     question_id: question_id
   )
@@ -141,11 +141,11 @@ Answer.create(
 
 
 # Create Comments
-8.times {
+20.times {
   author_id = User.all.sample.id
   answer_id = Answer.all.sample.id
   Comment.create!(
-    body: Faker::GreekPhilosophers.unique.quote,
+    body: Faker::GreekPhilosophers.quote,
     author_id: author_id,
     answer_id: answer_id
   )

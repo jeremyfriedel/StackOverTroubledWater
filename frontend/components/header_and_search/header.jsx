@@ -14,7 +14,9 @@ const Header = ({ currentUser, logout }) => {
       </Link>
         <div className = 'login-signup-header-links'>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span className="portfolio"> <a href="http://www.jeremyfriedel.com">Portfolio</a></span>
+&nbsp;&nbsp;&nbsp;
       <Link to="/login" className='login-link-top'>Login</Link>&nbsp;&nbsp;
       <Link to="/signup" className = 'signup-link-top'>Sign up!</Link>
       

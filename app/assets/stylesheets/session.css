@@ -455,6 +455,11 @@ li {
   margin-left: -1.375em; /* -22px */
 }
 
+.portfolio > a{
+  color: rgb(85, 26, 139);
+  text-decoration: none;
+}
+
 .sidebar-container-globe {
   margin-left: -1em; /* -16px */
 }
