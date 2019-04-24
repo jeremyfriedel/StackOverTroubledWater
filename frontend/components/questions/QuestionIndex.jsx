@@ -20,6 +20,7 @@ class QuestionIndex extends React.Component {
 
   render() {
     const { questions } = this.props;
+    questions.reverse(); 
     
     return (
       <>
