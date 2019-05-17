@@ -20,20 +20,34 @@ class QuestionIndex extends React.Component {
 
   render() {
     const { questions } = this.props;
+    let blueboxvar = () =>( <div></div>);
+    if (!this.props.currentUser) {
+      blueboxvar = () => (<div className='question-index-box'>
+       
+        <div className='blue-outer-container-div'>
+          <div className='blue-inner-container-div-commented-out'>
+            < BlueSessionFormContainer />
+          </div>
+        </div>
+      </div>)
+    }
+    else {
+      
+      blueboxvar = () => (
+        <div className='question-index-box'>
+      </div>);
+    }
     
+
+
     return (
       <>
         <LeftSideBar />
       <div className = "left-side-question-show">
       {/* < QuestionFormContainer /> */}
       <div className='question-index-list-container'>
-          <div className='question-index-box'> 
-            <div className='blue-outer-container-div'>
-          <div className='blue-inner-container-div-commented-out'>
-            < BlueSessionFormContainer />
-            </div>
-            </div>
-           </div>
+            {blueboxvar()}
+
         <ul className= 'question-index-list'>
       <table className="table1">
       <thead>
@@ -49,7 +63,7 @@ class QuestionIndex extends React.Component {
       <tbody>
 
       {
-        questions.map (question => (
+        questions.slice(0).reverse().map (question => (
           <tr key={`question_table_column${question.id}`}
           className = "table1-tr-class"
           >

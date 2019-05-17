@@ -396,7 +396,7 @@ li {
 }
 
 .sidebar-container {
-  padding-top: 10.625em; /* 90px */
+  padding-top: 1em; /* 90px */
   font-size: 1.875em; /* 30px */
   border-right: solid #D6D9DC 0.0625em; /* 1px */
   margin-left: -1.3%;
@@ -453,6 +453,11 @@ li {
 .sidebar-container-home,
 .sidebar-container-public {
   margin-left: -1.375em; /* -22px */
+}
+
+.portfolio > a{
+  color: rgb(85, 26, 139);
+  text-decoration: none;
 }
 
 .sidebar-container-globe {
@@ -796,7 +801,7 @@ li {
 }
 
 .question-form-title {
-  height: 1.625em; /* 26px */
+  height:  26px;
   /* width: 18.75em;  */
 }
 
@@ -836,7 +841,7 @@ textarea {
     border: none;
     color: white;
     font-size: 14px;
-    /* margin-top: 10px; */
+    margin-top: 0.1em;
     cursor: pointer;
 
 }
@@ -858,6 +863,7 @@ textarea {
     color: white;
     font-size: 0.875em; /* 14px */
     cursor: pointer;
+    margin-top: 0.1em;
 
 }
 
@@ -867,10 +873,14 @@ textarea {
 
 .comment-form-all {
   display: flex;
+  flex-direction: column;
+  min-width: 40em;
 }
 .question-form-all {
   display: flex;
   flex-direction: column;
+  min-width: 40em;
+
 }
 
 
@@ -884,7 +894,7 @@ textarea {
 
 .demoUser-button {
   font-size: 15px;
-  background-color: red;
+  background-color: rgb(102, 75, 128);
   padding: .9em;
   border-radius: 0.1875em; /* 3px */
   box-shadow: inset 0 0.0625em 0 0 rgba(88, 209, 159, 0.75), 0 0 0 0 /* 1px */ rgba(0,149,255,0);
@@ -978,7 +988,7 @@ textarea {
 .header-logout{
   position: absolute;
   top: .5em;
-  right: 7.5em;
+  right: 1em;
   background-color: #0095ff;
   padding-bottom: 8px;
   padding-left: 10.4px;
@@ -994,6 +1004,7 @@ textarea {
 
 .header-logout:hover{
   background-color: #007ed9;
+  cursor: pointer;
 }
 
 .add-a-comment-link{
@@ -1008,3 +1019,26 @@ textarea {
 .add-a-comment-link:hover{
   color: rgb(4, 47, 121);
 }
+
+.question-body > a:hover {
+  color: #3af;
+  opacity: 1; 
+}
+
+.right-sidebar-links:hover {
+  color: #3af;
+}
+
+.emoji-placeholder-personal {
+  margin-left: 0.3em;
+}
+
+.header {
+  z-index: 1;
+}
+
+.like-button {
+  border: none;
+  outline: none;
+}
+

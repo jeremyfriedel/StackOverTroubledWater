@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactQuill from 'react-quill'; 
 
 import { connect } from 'react-redux';
 import { newAnswer } from '../../actions/answers_actions';
@@ -14,7 +15,23 @@ class AnswerForm extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleEditorChange = this.handleEditorChange.bind(this);
+
+
+    this.state.options = [
+      ['code-block', 'code', 'link', 'blockquote', 'image'],
+      ['bold', 'italic', 'underline'],
+      [{ 'list': 'ordered' }, { 'list': 'bullet' }, { 'header': [1, 2, 3, false] }],
+    ];
+
   }
+
+  handleEditorChange(value, delta, source, editor) {
+
+    this.setState({ body: value, plain_text: editor.getText() }
+    );
+  }
+
 
   handleChange(field) {
     return (event) => (
@@ -41,12 +58,12 @@ class AnswerForm extends React.Component {
       className="comment-form-all"
 
       >
-          <textarea
-          type='text'
-          className = 'answer-form-box'
-          onChange={this.handleChange('body')}
+          <ReactQuill
+            onChange={this.handleEditorChange}
           value={this.state.body}
-        />
+          modules={{ toolbar: this.state.options }}
+          // className = 'answer-form-box'
+          />
         {/* <input
           type='text'
           onChange={this.handleChange('author_id')}

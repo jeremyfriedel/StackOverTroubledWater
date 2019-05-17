@@ -5,13 +5,43 @@ import AnswerFormContainer from '../answers/AnswerFormContainer';
 import CommentFormContainer from '../comments/CommentFormContainer';
 import Sidebar from '../left_sidebar/sidebar';
 import { Link } from 'react-router-dom';
+import RightSidebarContainer from '../right_sidebar/RightSidebarContainer';
 
 class QuestionShow extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      likeStatus: []
+    };
+    this.handleClick = this.handleClick.bind(this);
+
+    this.createMarkup = this.createMarkup.bind(this);
+  }
+
+  createMarkup(html) {
+    return { __html: html };
+  }
+
+
+  handleClick() {
+    this.setState({
+      likeStatus: !this.state.likeStatus
+    });
+    
+  }
+
+  
+
+
 
 
   componentDidMount() {
     this.initialId = this.props.questionId;
     this.props.fetchQuestion(this.props.questionId);
+    window.scrollTo(0, 0);
+  
+    // debugger
     // debugger
   }
 
@@ -30,8 +60,11 @@ class QuestionShow extends React.Component {
           key={`comment${comment.id}`}
           className = "question-show-comment-body"
         >
-          <div className= "question-show-comment-body-text"> 
-            {comment.body} - &nbsp;
+          <div className="question-show-comment-body-text"
+            
+          > 
+            <div dangerouslySetInnerHTML={this.createMarkup(comment.body)}></div>
+            
             <span className= "question-show-comment-author-usernamme">
               {comment.author} 
             </span>
@@ -54,7 +87,7 @@ class QuestionShow extends React.Component {
 
 
   render() {
-
+    // debugger
 
     const { question } = this.props;
 
@@ -62,15 +95,23 @@ class QuestionShow extends React.Component {
       return (<div></div>)
     }
 
+    const label = this.state.likeStatus ? 
+       <svg aria-hidden="true" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
+ : 
+      <svg aria-hidden="true" className="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26z"></path></svg>
+
+
     let answers;
 
     if (question.answers){
       answers = question.answers.map(answer => (
+        
         <div
           key={`answer${answer.id}`}
           className='answer-div-container'
         >
-          <div className='answer-body-div'>{answer.body}</div>
+          <div className='answer-body-div' dangerouslySetInnerHTML={this.createMarkup(answer.body)}></div>
+
           <div className='answer-body-author'>
             <div className='answer-timestamp-div'>answered {timeago(answer.created_at)} ago</div>
           <div className='answer-body-author-text'> {answer.author}
@@ -81,6 +122,15 @@ class QuestionShow extends React.Component {
           </div>
           {/* <svg aria-hidden="true" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
           <svg aria-hidden="true" className="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26z"></path></svg> */}
+
+            {/* <div className = "like-button-div">
+            <button className="like-button"
+              onClick={this.handleClick}
+            >
+
+            {label}</button>
+            </div> */}
+
 
           <div className='answer-comments-body'>
           {this.renderComments(answer)}
@@ -107,7 +157,6 @@ class QuestionShow extends React.Component {
 
       
 
-    
 
     
     
@@ -120,7 +169,7 @@ class QuestionShow extends React.Component {
       <div className="question-outer-container">
       <div className="question-title-show">
           <div className="question-title-span">{question.title}</div>
-          <div className="question-body-span">{question.body}</div>
+            <div className="question-body-span" dangerouslySetInnerHTML={this.createMarkup(question.body)}></div>
           <div className="question-author-outer-body">
           <div className="question-author-placeholder"></div>
            
@@ -150,10 +199,15 @@ class QuestionShow extends React.Component {
           />
 
     </div>
+          {/* <RightSidebarContainer /> */}
+
     </div >
     </>
     )
   }
+
+
+
 
 
 }

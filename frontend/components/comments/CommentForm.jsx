@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactQuill from 'react-quill'; 
+
 
 import { connect } from 'react-redux';
 import { newComment } from '../../actions/comments_actions';
@@ -15,6 +17,14 @@ class CommentForm extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleEditorChange = this.handleEditorChange.bind(this);
+
+    this.state.options = [
+      ['code-block', 'code', 'link', 'blockquote'],
+      ['bold', 'italic', 'underline'],
+      [{ 'list': 'ordered' }, { 'list': 'bullet' }, { 'header': [1, 2, 3, false] }],
+    ];
+
   }
 
   handleChange(field) {
@@ -36,6 +46,14 @@ class CommentForm extends React.Component {
 
   }
 
+  handleEditorChange(value, delta, source, editor) {
+
+    this.setState({ body: value, plain_text: editor.getText() }
+    );
+  }
+
+
+
   render() {
     
     return (
@@ -43,12 +61,12 @@ class CommentForm extends React.Component {
       <form onSubmit={this.handleSubmit}
       className="comment-form-all"
       >
-          <textarea
-          type='text'
-          className = 'comment-form-box'
-          onChange={this.handleChange('body')}
-          value={this.state.body}
-        />
+          <ReactQuill
+            onChange={this.handleEditorChange}
+            value={this.state.body}
+            modules={{ toolbar: this.state.options }}
+          // className = 'comment-form-box'
+          />
         {/* <input
           type='text'
           onChange={this.handleChange('author_id')}

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactQuill from 'react-quill'; 
 
 import { withRouter } from 'react-router-dom';
 
@@ -17,13 +18,27 @@ class QuestionForm extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleEditorChange = this.handleEditorChange.bind(this);
+    this.state.options = [
+      ['code-block', 'code', 'link', 'blockquote', 'image'],
+      ['bold', 'italic', 'underline'],
+      [{ 'list': 'ordered' }, { 'list': 'bullet' }, { 'header': [1, 2, 3, false] }],
+    ];
   }
 
   handleChange(field) {
+    
     return (event) => (
       this.setState({ [field]: event.target.value })
     );
   }
+
+  handleEditorChange(value, delta, source, editor) {
+    
+    this.setState({ body: value, plain_text: editor.getText() }
+    );
+  }
+
 
   handleSubmit(event) {
     
@@ -38,9 +53,14 @@ class QuestionForm extends React.Component {
   }
 
   render() {
+
+
     
     return (
       <div className = "question-form-container-div">
+
+
+
       <form onSubmit={this.handleSubmit}
       className = "question-form-all"
       >
@@ -49,13 +69,16 @@ class QuestionForm extends React.Component {
             onChange={this.handleChange('title')}
             value={this.state.title}
           />
+            {/* className='question-form-body' */}
 
-        <textarea
-          type='text'
-          className='question-form-body'
-          onChange={this.handleChange('body')}
-          value={this.state.body}
-        />
+
+          <ReactQuill
+            onChange={this.handleEditorChange}
+            value={this.state.body}
+            modules={{ toolbar: this.state.options }}
+          />
+
+
 
         {/* <input
           type='text'
