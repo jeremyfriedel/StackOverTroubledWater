@@ -96,9 +96,13 @@ class QuestionShow extends React.Component {
     }
 
     const label = this.state.likeStatus ? 
-       <svg aria-hidden="true" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
+    //  <svg aria-hidden="true" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
+      <div className="blackheart"><p><span>Like</span> &hearts;</p></div>
  : 
-      <svg aria-hidden="true" className="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26z"></path></svg>
+      <div className="redheart" ><p><span>Unlike</span> &hearts;</p></div>
+        // <svg aria-hidden="true" fill="red" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
+      // <span>Unlike</span>
+      // <svg aria-hidden="true" className="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26z"></path></svg>
 
 
     let answers;
@@ -123,13 +127,6 @@ class QuestionShow extends React.Component {
           {/* <svg aria-hidden="true" className="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10z"></path></svg>
           <svg aria-hidden="true" className="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26z"></path></svg> */}
 
-            {/* <div className = "like-button-div">
-            <button className="like-button"
-              onClick={this.handleClick}
-            >
-
-            {label}</button>
-            </div> */}
 
 
           <div className='answer-comments-body'>
@@ -167,9 +164,20 @@ class QuestionShow extends React.Component {
       <>
       <Sidebar />
       <div className="question-outer-container">
+      
       <div className="question-title-show">
+      
           <div className="question-title-span">{question.title}</div>
+
             <div className="question-body-span" dangerouslySetInnerHTML={this.createMarkup(question.body)}></div>
+            <div className="like-button-div">
+              <button className="like-button"
+                onClick={this.handleClick}
+              >
+
+                {label}</button>
+            </div>
+
           <div className="question-author-outer-body">
           <div className="question-author-placeholder"></div>
            

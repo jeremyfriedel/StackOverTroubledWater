@@ -145,3 +145,20 @@
 .question-show-comment-author-usernamme-timestamp {
   color: #9199a1;
 }
+
+.redheart {
+  color: red;
+}
+
+.redheart, .blackheart {
+  font-size: 40px;
+  text-align: right;
+}
+
+.redheart > p > span {
+  font-size: 14px;
+}
+
+.blackheart > p > span {
+  font-size: 14px;
+}
