@@ -38,8 +38,11 @@ For a live version go to [here](https://stack-over-troubled-water.herokuapp.com/
 ![screenshot](/stackscreenshot2.png)
 ![screenshot](/screenshot3.png)
 ### Code Snippets
+Question index page
 ![code snippet](/code_snippet_1.png)
+React Link's for question show page
 ![code snippet](/code_snippet_2.png)
+Protecting routes with React Router
 ![code snippet](/code_snippet_3.png)
 
 
