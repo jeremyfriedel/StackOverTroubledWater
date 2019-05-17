@@ -37,15 +37,15 @@ If you want to host this website, It is very simple, simply npm install (which a
 
 For a live version go to [here](https://stack-over-troubled-water.herokuapp.com/)
 
-![screenshot](/stackscreenshot2.png)
-![screenshot](/screenshot3.png)
+![screenshot](screenshots/stackscreenshot2.png)
+![screenshot](screenshots/screenshot3.png)
 ### Code Snippets
 Question index page
-![code snippet](/code_snippet_1.png)
+![code snippet](screenshots/code_snippet_1.png)
 React Link's for question show page
-![code snippet](/code_snippet_2.png)
+![code snippet](screenshots/code_snippet_2.png)
 Protecting routes with React Router
-![code snippet](/code_snippet_3.png)
+![code snippet](screenshots/code_snippet_3.png)
 
 
 
