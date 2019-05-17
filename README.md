@@ -36,7 +36,7 @@ If you want to host this website, It is very simple, simply npm install (which a
 For a live version go to [here](https://stack-over-troubled-water.herokuapp.com/)
 
 ![screenshot](/stackscreenshot2.png)
-![screenshot](/stackscreenshot3.png)
+![screenshot](/screenshot3.png)
 ![screenshot](/code_snippet_1.png)
 ![screenshot](/code_snippet_2.png)
 ![screenshot](/code_snippet_3.png)
