@@ -2,6 +2,8 @@
 
 For a live version go to [here](https://stack-over-troubled-water.herokuapp.com/)
 
+StackOverTroubledWater is a single-page, web app clone of Stack Overflow, a question and answer site. StackOverTroubledWater uses a Ruby on Rails backend, with PostgresSQL as the database. All datat is accesible via an JSON API. React and Redux constitute the frontend of the web app.
+
 
 Project description
 + Single Page Stack Overflow clone built with a rails API backend and React and Redux Frontend.
